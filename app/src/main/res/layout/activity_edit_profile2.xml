@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <android.widget.Button
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <android.widget.Button
+        android:id="@+id/saveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:fitsSystemWindows="true">
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:text="Personal Details"
+                    android:layout_margin="10dp"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:hint="Student Id"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:id="@+id/stuID"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="03-2122-031549"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Student Name"
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/stuName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:inputType="text"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:text="Mark Paul Sarmiento"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="College"/>
+                <TextView
+                    android:id="@+id/stuCollege"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="CITE"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Course"/>
+                <TextView
+                    android:id="@+id/stuCourse"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Bachelor of Science-Computer Science"/>
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Semester"/>
+                <TextView
+                    android:id="@+id/stuSem"
+                    android:paddingVertical="5dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:text="Y2S2"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_marginTop="10dp"
+                    android:textSize="15sp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Date of Birth"/>
+
+                <EditText
+                    android:id="@+id/stuBirthDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="03-07-2004"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:textSize="15sp"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="Gender"/>
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <RadioButton
+                        android:id="@+id/stuMale"
+                        android:layout_marginStart="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Male"
+                        android:checked="true"/>
+                    <RadioButton
+                        android:id="@+id/stuFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Female"/>
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Mother's Name"/>
+
+                <EditText
+                    android:id="@+id/stuMother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="Marites P. Sarmiento"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Father's Name"/>
+
+                <EditText
+                    android:id="@+id/stuFather"
+                    android:gravity="top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:inputType="text"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:text="Paul L. Sarmiento"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:text="Contact Details"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Student Mobile No"/>
+
+                <EditText
+                    android:id="@+id/stuNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="number"
+                    android:text="09476938242"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Email"/>
+
+                <EditText
+                    android:id="@+id/stuEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="mape.sarmiento.up@phinmaed.com"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Father's Mobile No"/>
+
+                <EditText
+                    android:id="@+id/stuFatherNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="number"
+                    android:text="09283555810"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Mother's Mobile No"/>
+
+                <EditText
+                    android:id="@+id/stuMotherNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="09283555810"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:text="Emergency Person Contact Details"
+                    android:layout_margin="10dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Person Name"/>
+
+                <EditText
+                    android:id="@+id/stuGuardian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:text="Paul L. Sarmiento"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Relation"/>
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton
+                        android:id="@+id/stuRelFather"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Father"
+                        android:checked="true"/>
+                    <RadioButton
+                        android:id="@+id/stuRelMother"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Mother"
+                        tools:ignore="HardcodedText" />
+                    <RadioButton
+                        android:id="@+id/stuRelGuardian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Guardian"
+                        tools:ignore="HardcodedText" />
+                </RadioGroup>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Address"/>
+
+                <EditText
+                    android:id="@+id/stuGuardianAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Mobile No"/>
+
+                <EditText
+                    android:id="@+id/stuGuardianNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="09283555810"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Current Address"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Address"/>
+                <EditText
+                    android:id="@+id/stuCurrentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="City/Municipality"/>
+                <EditText
+                    android:id="@+id/stuCurrentCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="Manaoag"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Province"/>
+                <EditText
+                    android:id="@+id/stuCurrentProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="Pangasinan"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Country"/>
+                <EditText
+                    android:id="@+id/stuCurrentCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="PHILIPPINES"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Permanent Address"
+                    android:textStyle="bold"
+                    android:textSize="22sp"
+                    android:layout_margin="10dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Address"/>
+                <EditText
+                    android:id="@+id/stuPermanentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="City/Municipality"/>
+                <EditText
+                    android:id="@+id/stuPermanentCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="Manaoag"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Province"/>
+                <EditText
+                    android:id="@+id/stuPermanentProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="Pangasinan"
+                    android:textSize="15sp"
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:textSize="15sp"
+                    android:hint="Country"/>
+                <EditText
+                    android:id="@+id/stuPermanentCountry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="#CEC8C8"
+                    android:paddingHorizontal="5dp"
+                    android:paddingVertical="10dp"
+                    android:inputType="text"
+                    android:text="PHILIPPINES"
+                    android:textSize="15sp"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

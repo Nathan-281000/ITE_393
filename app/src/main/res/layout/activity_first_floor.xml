@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/floorOne"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ite393_2nd_bg"
+    tools:context=".firstFloor">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_corners"
+        android:text="First Floor"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.070"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/backBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.070" />
+
+    <ImageView
+        android:id="@+id/mapOne"
+        android:layout_width="380dp"
+        android:layout_height="700dp"
+        android:src="@drawable/floor_one"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crBoys"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.024"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/testingRoom"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/exit"
+        android:layout_width="91dp"
+        android:layout_height="57dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.023" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/crGirl"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.978"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/hydraulicsLab"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.23" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/marketingDep"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        android:contentDescription="@string/Back"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.367"
+        tools:ignore="DuplicateSpeakableTextCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/mainEntrance"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.505" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/commercialSpace"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.648"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/commercialSpaceTw0"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.016"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.774" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/canteen"
+        android:layout_width="79dp"
+        android:layout_height="250dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/incubationRm"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        android:contentDescription="@string/SA_TXT"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.976"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.647" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/isolationRm"
+        android:layout_width="79dp"
+        android:layout_height="79dp"
+        android:alpha="0"
+        android:contentDescription="@string/Back"
+        app:layout_constraintBottom_toBottomOf="@+id/mapOne"
+        app:layout_constraintEnd_toEndOf="@+id/mapOne"
+        app:layout_constraintHorizontal_bias="0.98"
+        app:layout_constraintStart_toStartOf="@+id/mapOne"
+        app:layout_constraintTop_toTopOf="@+id/mapOne"
+        app:layout_constraintVertical_bias="0.787" />
+
+    <ImageView
+        android:id="@+id/imagePin"
+        android:layout_width="380dp"
+        android:layout_height="700dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.497" />
+
+    <TextView
+        android:id="@+id/roomBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mapOne" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
