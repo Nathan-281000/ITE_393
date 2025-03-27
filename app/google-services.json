@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "40864160251",
+    "project_id": "phinma-education-app",
+    "storage_bucket": "phinma-education-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:40864160251:android:662364038e6e4b2485535e",
+        "android_client_info": {
+          "package_name": "com.example.ite393exam"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqHsLyY5ovZmMRTdTZBCC-tFLjQH575S0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

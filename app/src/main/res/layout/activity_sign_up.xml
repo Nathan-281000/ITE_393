@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ite393_2nd_bg"
+    tools:context=".SignUp"
+    tools:ignore="ExtraText">
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_forID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:helperText="Required"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.422">
+
+        <EditText
+            android:id="@+id/studentId"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Student ID"
+            android:inputType="text"
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#5E000000"
+            android:textStyle="bold"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_forName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="20"
+        app:endIconMode="clear_text"
+        app:helperText="Required"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531">
+
+        <EditText
+            android:id="@+id/studentName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Full Name: Juan Peralta Dela Cruz"
+            android:inputType="text"
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#5E000000"
+            android:textStyle="bold"
+            tools:ignore="Autofill,HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_forPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:helperText="Required"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.735">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#5E000000"
+            android:textStyle="bold"
+            tools:ignore="Autofill,HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput_forRePassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:endIconMode="password_toggle"
+        app:helperText="Required"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.845">
+
+        <EditText
+            android:id="@+id/rePassword"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Re Enter Password"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:paddingHorizontal="5dp"
+            android:textColor="@color/black"
+            android:textColorHint="#5E000000"
+            android:textStyle="bold"
+            tools:ignore="Autofill,HardcodedText" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="250dp"
+        android:layout_height="55dp"
+        android:layout_marginHorizontal="7dp"
+        android:background="@drawable/bg_spinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <android.widget.Button
+        android:id="@+id/signUpBtn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#E7EFE6"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="true"
+        android:text="Sign Up"
+        android:textColor="@color/black"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.939"
+        tools:ignore="HardcodedText" />
+
+    <ImageView
+        android:id="@+id/imageViewing"
+        android:layout_width="165dp"
+        android:layout_height="161dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        app:srcCompat="@drawable/urdaneta"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/rtrn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:text="Change School"
+        android:textColor="#8E8989"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.884"
+        tools:ignore="HardcodedText,TouchTargetSizeCheck,TextContrastCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
