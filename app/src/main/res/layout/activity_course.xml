@@ -8,23 +8,31 @@
     android:background="@drawable/ite393_2nd_bg"
     tools:context=".course">
 
-
-
-
-    <ScrollView
-        android:layout_marginVertical="20dp"
-        android:id="@+id/course"
+    <ImageView
+        android:id="@+id/imageView10"
         android:layout_width="match_parent"
-        android:layout_height="625dp"
-        android:layout_marginTop="3dp"
-        android:background="#00FFFFFF"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58"
+        app:srcCompat="@drawable/phinmaedlogo" />
+
+
+    <ScrollView
+        android:id="@+id/course"
+        android:layout_width="match_parent"
+        android:layout_height="625dp"
+        android:layout_marginVertical="20dp"
+        android:layout_marginTop="12dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView10"
         tools:ignore="SpeakableTextPresentCheck">
+
 
         <LinearLayout
             android:id="@+id/aboutView_2"
@@ -41,6 +49,7 @@
                 android:text="CITE"
                 android:textStyle="bold"
                 android:textSize="30sp"
+                android:layout_marginBottom="10dp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif"
@@ -55,6 +64,39 @@
                 android:layout_gravity="center"
                 />
 
+
+            <TextView
+                android:layout_width="260dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:padding="6dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/citetxt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/citeTXT"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+
+
             <TextView
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_border"
@@ -62,6 +104,7 @@
                 android:layout_height="wrap_content"
                 android:text="MLS"
                 android:textStyle="bold"
+                android:layout_marginBottom="10dp"
                 android:textSize="30sp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:textColor="@color/black"
@@ -74,12 +117,43 @@
                 android:layout_gravity="center"
                 />
 
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_width="260dp"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/cahstxt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/cahsTXT"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
             <TextView
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_border"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
                 android:text="CEA"
+                android:layout_marginBottom="10dp"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:layout_marginTop="@dimen/_20dp"
@@ -93,11 +167,76 @@
                 android:layout_gravity="center"
                 />
 
+
+            <TextView
+                android:layout_width="210dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:padding="6dp"
+                android:gravity="center"
+                android:text="@string/cea_BSA_txt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/bsa_TXT"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:layout_marginBottom="50dp"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:layout_width="210dp"
+                android:padding="6dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/cea_BSCE_txt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/ce_TXT"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+
+
+
             <TextView
                 android:layout_gravity="center"
                 android:background="@drawable/rounded_border"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
                 android:text="CMA"
                 android:textStyle="bold"
                 android:textSize="30sp"
@@ -109,18 +248,152 @@
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/cma"
                 android:layout_gravity="center"
-                />
+                android:src="@drawable/cma" />
 
 
+            <TextView
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:padding="6dp"
+                android:gravity="center"
+                android:text="@string/cma_SA_txt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/SA_TXT"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:layout_marginBottom="50dp"
+                android:textSize="19sp"
+                android:textStyle="italic" />
+
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:padding="6dp"
+                android:gravity="center"
+                android:text="@string/cma_AT_txt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/AT_THXT"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:textSize="19sp"
+                android:layout_marginBottom="50dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:padding="6dp"
+                android:gravity="center"
+                android:text="@string/cma_TM_txt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/TM_TXT"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:textSize="19sp"
+                android:layout_marginBottom="50dp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="220dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="@string/cma_ENTREP_txt"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:padding="6dp"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#E7EFE6"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:text="@string/the_bachelor_of_science_in_entrepreneurship_bs_entrepreneurship_is_a_dynamic_program_that_equips_students_with_essential_knowledge_and_skills_for_success_in_entrepreneurship_the_curriculum_integrates_theory_with_hands_on_experience_covering_business_planning_financial_management_marketing_and_innovation_through_real_world_projects_graduates_emerge_ready_to_identify_opportunities_create_sustainable_business_models_and_navigate_the_challenges_of_entrepreneurship_the_program_fosters_creativity_and_resilience_preparing_students_to_excel_as_business_leaders_and_innovators"
+                android:textAlignment="center"
+                android:textColor="#373333"
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
 
 
 
         </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
     </ScrollView>
+
 
     <android.widget.Button
         android:id="@+id/button"
@@ -133,19 +406,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutView"
+        app:layout_constraintTop_toBottomOf="@+id/course"
         app:layout_constraintVertical_bias="0.477" />
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/aboutView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/phinmaedlogo" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
