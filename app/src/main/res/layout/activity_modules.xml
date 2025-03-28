@@ -7,25 +7,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ite393_2nd_bg"
-    tools:context=".modules">
+    tools:context=".Modules">
 
 
 
-
-    <ImageView
-        android:id="@+id/imageView8"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:contentDescription="@string/todo"
-        android:scaleType="centerInside"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/phinmaedlogo" />
 
     <ScrollView
+        android:layout_marginVertical="20dp"
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="650dp"
+        android:layout_height="760dp"
         android:background="#00FFFFFF"
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -33,7 +24,7 @@
         app:layout_constraintHorizontal_bias="0.488"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.785"
+        app:layout_constraintVertical_bias="0.01"
         tools:ignore="SpeakableTextPresentCheck">
 
 
@@ -42,7 +33,19 @@
             android:id="@+id/scrollable"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="ExtraText">
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:contentDescription="@string/todo"
+                android:scaleType="centerInside"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/phinmaedlogo"
+                tools:ignore="ImageContrastCheck" />
 
 
             <android.widget.TextView
@@ -64,7 +67,8 @@
                 app:layout_constraintHorizontal_bias="0.054"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.241" />
+                app:layout_constraintVertical_bias="0.241"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="wrap_content"
@@ -85,7 +89,8 @@
                 app:layout_constraintHorizontal_bias="0.054"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.241" />
+                app:layout_constraintVertical_bias="0.241"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -97,7 +102,8 @@
                 android:text="A combination of studying in school and studying at home."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -109,7 +115,8 @@
                 android:text="2 days face-to-face and 4 days remote learning."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -121,7 +128,8 @@
                 android:text="Teacher support will be via text, call and social media during the remote coaching."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="wrap_content"
@@ -142,7 +150,8 @@
                 app:layout_constraintHorizontal_bias="0.054"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.241" />
+                app:layout_constraintVertical_bias="0.241"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -154,7 +163,8 @@
                 android:text="Largely home-based learning."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -166,7 +176,8 @@
                 android:text="Suited for regular students who live far away and have difficulties traveling to come to school."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -178,7 +189,8 @@
                 android:text="Learn online together with your classmates."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -190,7 +202,8 @@
                 android:text="Teacher support will be via text, call and social media during the remote coaching."
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="wrap_content"
@@ -237,7 +250,8 @@
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:padding="10dp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="VisualLintLongText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -284,7 +298,8 @@
                 android:textSize="18sp"
                 android:textStyle="bold"
                 android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginRight="10dp"
+                tools:ignore="HardcodedText,RtlHardcoded" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -294,8 +309,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -306,8 +322,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -317,8 +334,10 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -329,8 +348,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -340,8 +360,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
 
             <android.widget.TextView
@@ -365,7 +386,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -376,8 +397,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -387,8 +409,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -399,8 +422,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -410,8 +434,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -422,8 +447,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -433,8 +459,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -450,14 +477,14 @@
                 android:text="3. Valedictorian and Salutatorian Scholarship"
                 android:textColor="@color/black"
                 android:textSize="25sp"
-
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.054"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.241" />
+                app:layout_constraintVertical_bias="0.241"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -468,8 +495,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -479,8 +507,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -491,8 +520,9 @@
                 android:textColor="@color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -502,8 +532,9 @@
                 android:textAlignment="textStart"
                 android:textColor="@color/black"
                 android:textSize="14sp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginRight="10dp"/>
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="10dp"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -525,7 +556,8 @@
                 app:layout_constraintHorizontal_bias="0.054"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.241" />
+                app:layout_constraintVertical_bias="0.241"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -535,7 +567,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -544,7 +577,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -554,7 +588,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -563,7 +598,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -586,7 +622,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -596,7 +632,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -605,7 +642,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -615,7 +653,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -624,7 +663,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -647,7 +687,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -657,7 +697,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -666,7 +707,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -676,7 +718,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -685,7 +728,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -708,7 +752,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -718,7 +762,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -727,7 +772,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -737,7 +783,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -746,7 +793,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -769,7 +817,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -779,7 +827,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -788,7 +837,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -798,7 +848,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -807,7 +858,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -817,7 +869,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -826,7 +879,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -849,7 +903,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -859,7 +913,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -868,7 +923,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -878,7 +934,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -887,7 +944,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -897,7 +955,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -906,7 +965,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -929,7 +989,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -939,16 +999,18 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="– 10% off the tuition for 2 siblings, plus 5% to each additional sibling enrolled in the University (basic education or college)"
                 android:padding="10dp"
+                android:text="– 10% off the tuition for 2 siblings, plus 5% to each additional sibling enrolled in the University (basic education or college)"
                 android:textAlignment="textStart"
+                android:textColor="@color/black"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                tools:ignore="HardcodedText,VisualLintLongText,TextContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -958,7 +1020,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -967,7 +1030,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -977,7 +1041,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -986,7 +1051,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -1009,7 +1075,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.241"
-                tools:ignore="TextSizeCheck" />
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1019,7 +1085,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText,TooManyViews" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1028,7 +1095,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1038,7 +1106,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1047,7 +1116,8 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1057,7 +1127,8 @@
                 android:textSize="18sp"
                 android:padding="9sp"
                 android:textStyle="bold"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1066,28 +1137,158 @@
                 android:padding="10dp"
                 android:textAlignment="textStart"
                 android:textSize="14sp"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
     </ScrollView>
-
-    <android.widget.Button
-        android:id="@+id/SCPBTN"
-        android:layout_gravity="center"
-        android:layout_width="150dp"
-        android:layout_marginTop="500dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="#E7EFE6"
-        android:text="@string/Back"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_corners"
+        android:backgroundTint="#D1C3C3"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownIdInLayout">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/course"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/course"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.100"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/modules"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/modules"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modalities"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/maps"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/maps"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="VisualLintBounds">
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pogiko"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.890"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,13 +2,13 @@ package com.example.ite393exam
 
 import android.annotation.SuppressLint
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.net.toUri
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
@@ -25,7 +25,7 @@ class about : AppCompatActivity() {
         }
 
         val btnback = findViewById<Button>(R.id.aboutbck)
-        val intention = Intent(this, Home_Page::class.java)
+        val intention = Intent(this, HomePage::class.java)
         val pass = Intent(this, student_manual::class.java)
 
         findViewById<Button>(R.id.manual).setOnClickListener {
@@ -38,15 +38,13 @@ class about : AppCompatActivity() {
         val linkTomaps_2: TextView = findViewById(R.id.maps_2)
 
         linkTomaps.setOnClickListener {
-            val uri = Uri.parse("geo:15.9698,120.5722?q=XH9C+WV4,+MacArthur+Hwy,+Urdaneta,+Pangasinan")
+            val uri = "geo:15.9698,120.5722?q=XH9C+WV4,+MacArthur+Hwy,+Urdaneta,+Pangasinan".toUri()
 
             val intent = Intent(Intent.ACTION_VIEW, uri)
             intent.setPackage("com.google.android.apps.maps")
 
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
-            } else {
-
             }
 
         }
@@ -56,7 +54,8 @@ class about : AppCompatActivity() {
         }
 
         linkTomaps_2.setOnClickListener {
-            val uri = Uri.parse("geo:16.0471,120.3425?q=28WV+R2R,+Arellano+St,+Downtown+District,+Dagupan,+Pangasinan")
+            val uri =
+                "geo:16.0471,120.3425?q=28WV+R2R,+Arellano+St,+Downtown+District,+Dagupan,+Pangasinan".toUri()
 
 
             val intent = Intent(Intent.ACTION_VIEW, uri)
@@ -64,8 +63,6 @@ class about : AppCompatActivity() {
 
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
-            } else {
-
             }
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true){

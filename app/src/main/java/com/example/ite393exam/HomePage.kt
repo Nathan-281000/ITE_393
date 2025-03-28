@@ -12,15 +12,13 @@ import androidx.fragment.app.FragmentManager
 import com.example.ite393exam.databinding.ActivityHomePageBinding
 
 
-class Home_Page : AppCompatActivity() {
+class HomePage : AppCompatActivity() {
     private val eventsMap = mapOf(
         // ✅ Ensuring correct year (2025) for February 14
         "2025-02-14" to "10TH FDC, Valentine's Day",
 
-
         // June
         "2025-06-01" to "First Week Hi and KUDOS",
-
 
         // July
         "2025-07-17" to "Welcome Assembly",
@@ -31,7 +29,6 @@ class Home_Page : AppCompatActivity() {
         "2025-07-26" to "General Assembly GPA and Tactical",
         "2025-07-31" to "Nutrition Month Celebration (TVL)",
 
-
         // August
         "2025-08-01" to "Convention PICE",
         "2025-08-02" to "Youth Search 2024 (UYFCYM)",
@@ -39,7 +36,6 @@ class Home_Page : AppCompatActivity() {
         "2025-08-15" to "Buwan ng Wika",
         "2025-08-23" to "Abel Kamustahan",
         "2025-08-27" to "P1 Examination (Freshmen and SHS gr 11)",
-
 
         // September
         "2025-09-06" to "Eucharistic Celebration",
@@ -49,7 +45,6 @@ class Home_Page : AppCompatActivity() {
         "2025-09-20" to "PUCU Fest, CITE Fest",
         "2025-09-21" to "CITE Fest",
 
-
         // October
         "2025-10-03" to "Teachers and Staff Appreciation Day",
         "2025-10-04" to "Rosary Devotion",
@@ -57,19 +52,16 @@ class Home_Page : AppCompatActivity() {
         "2025-10-10" to "Criminology Day",
         "2025-10-12" to "Clean Up Drive",
 
-
         // November
         "2025-11-06" to "English Fest",
         "2025-11-08" to "Testimonial CEA",
         "2025-11-21" to "P3 Examination (Freshmen)",
         "2025-11-31" to "SHS Sports Fest",
 
-
         // December
         "2025-12-03" to "Lamaparaan",
         "2025-12-09" to "Ningning Project",
         "2025-12-16" to "2nd Quarterly Exam (gr 11)",
-
 
         // February
         "2026-02-03" to "Eucharistic Celebration",
@@ -91,9 +83,9 @@ class Home_Page : AppCompatActivity() {
         binding = ActivityHomePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val passCourse = Intent(this, course::class.java)
-        val passModule = Intent(this, modules::class.java)
-        val passMap = Intent(this, maps::class.java)
+        val passCourse = Intent(this, Course::class.java)
+        val passModule = Intent(this, Modules::class.java)
+        val passMap = Intent(this, Maps::class.java)
         val passProfile = Intent(this, Profile::class.java)
         val about = Intent(this, about::class.java)
 
@@ -143,7 +135,5 @@ class Home_Page : AppCompatActivity() {
         fragmentManager = supportFragmentManager
         fragmentManager.beginTransaction().replace(R.id.close_pop, fragment).commit()
     }
-
-
 }
 

@@ -10,8 +10,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class fifthFloor : AppCompatActivity() {
     @SuppressLint("MissingInflatedId", "ClickableViewAccessibility", "SetTextI18n")
@@ -20,7 +18,7 @@ class fifthFloor : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_fifth_floor)
 
-        val pass = Intent(this, maps::class.java)
+        val pass = Intent(this, Maps::class.java)
         val btnBack = findViewById<Button>(R.id.backBtn)
         val rootLayout = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.main)
         val image = findViewById<ImageView>(R.id.imagePin)

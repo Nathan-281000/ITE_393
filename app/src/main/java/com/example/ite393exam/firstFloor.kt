@@ -8,7 +8,6 @@ import android.view.View
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 
@@ -20,7 +19,7 @@ class firstFloor : AppCompatActivity() {
         setContentView(R.layout.activity_first_floor)
 
         val rootLayout = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.floorOne)
-        val pass = Intent(this, maps::class.java)
+        val pass = Intent(this, Maps::class.java)
         val btnBack = findViewById<Button>(R.id.backBtn)
         val image = findViewById<ImageView>(R.id.imagePin)
         val roomBoard = findViewById<TextView>(R.id.roomBoard)

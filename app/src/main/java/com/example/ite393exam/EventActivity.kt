@@ -13,7 +13,7 @@ class EventActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_event) // Ensure this XML file exists
         findViewById<Button>(R.id.back).setOnClickListener{
-            val intent = Intent(this, Home_Page::class.java)
+            val intent = Intent(this, HomePage::class.java)
             startActivity(intent)
             finish()
         }

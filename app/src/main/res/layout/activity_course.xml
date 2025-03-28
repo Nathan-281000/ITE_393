@@ -6,16 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ite393_2nd_bg"
-    tools:context=".course">
-
-
-
+    tools:context=".Course">
 
     <ScrollView
         android:layout_marginVertical="20dp"
         android:id="@+id/course"
         android:layout_width="match_parent"
-        android:layout_height="625dp"
+        android:layout_height="760dp"
         android:layout_marginTop="3dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,7 +20,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.58"
+        app:layout_constraintVertical_bias="0.01"
         tools:ignore="SpeakableTextPresentCheck">
 
         <LinearLayout
@@ -32,19 +29,30 @@
             android:layout_height="wrap_content"
             android:textAlignment="gravity"
             android:orientation="vertical">
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:scaleType="fitCenter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/phinmaedlogo"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <TextView
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_border"
+                android:background="@drawable/rounded_bg_for_cite"
                 android:layout_width="360dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:text="CITE"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:layout_marginTop="@dimen/_20dp"
-                android:textColor="@color/black"
+                android:textColor="@color/white"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
 
 
@@ -53,99 +61,218 @@
                 android:layout_height="150dp"
                 android:src="@drawable/cite"
                 android:layout_gravity="center"
-                />
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_border"
+                android:background="@drawable/round_bg_for_cahs"
                 android:layout_width="360dp"
-                android:layout_height="wrap_content"
-                android:text="MLS"
+                android:layout_height="100dp"
+                android:text="CAHS"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/mls"
                 android:layout_gravity="center"
-                />
+                tools:ignore="ContentDescription" />
 
             <TextView
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_border"
+                android:background="@drawable/round_bg_for_cea"
                 android:layout_width="360dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:text="CEA"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
-                android:src="@drawable/cea"
                 android:layout_gravity="center"
-                />
+                android:src="@drawable/cea"
+                tools:ignore="ContentDescription,ImageContrastCheck" />
 
             <TextView
                 android:layout_gravity="center"
-                android:background="@drawable/rounded_border"
+                android:background="@drawable/round_bg_for_cma"
                 android:layout_width="360dp"
-                android:layout_height="wrap_content"
+                android:layout_height="100dp"
                 android:text="CMA"
                 android:textStyle="bold"
                 android:textSize="30sp"
                 android:layout_marginTop="@dimen/_20dp"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:src="@drawable/cma"
                 android:layout_gravity="center"
-                />
-
-
-
-
-
-
+                tools:ignore="ContentDescription" />
 
         </LinearLayout>
     </ScrollView>
-
-    <android.widget.Button
-        android:id="@+id/button"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:text="@string/Back"
-        android:textSize="16sp"
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_corners"
+        android:backgroundTint="#D1C3C3"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/aboutView"
-        app:layout_constraintVertical_bias="0.477" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownIdInLayout">
 
-    <ImageView
-        android:id="@+id/imageView10"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toTopOf="@+id/aboutView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/phinmaedlogo" />
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
 
+            <ImageButton
+                android:id="@+id/coursebtn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/course"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.100"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/modules"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/modules"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modalities"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/maps"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/maps"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="VisualLintBounds">
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pogiko"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.890"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </TableRow>
 </androidx.constraintlayout.widget.ConstraintLayout>

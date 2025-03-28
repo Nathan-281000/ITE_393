@@ -1,22 +1,23 @@
 package com.example.ite393exam
 
+//import com.google.firebase.auth.FirebaseAuth
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
-//import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.*
+import com.google.firebase.database.DatabaseReference
+import com.google.firebase.database.FirebaseDatabase
 
 class Profile : AppCompatActivity() {
     private lateinit var database: DatabaseReference
-    //private lateinit var auth: FirebaseAuth
     private lateinit var studentName: TextView
 
-    @SuppressLint("MissingInflatedId")
+    @SuppressLint("MissingInflatedId", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
@@ -25,28 +26,38 @@ class Profile : AppCompatActivity() {
             override fun handleOnBackPressed() {}
         })
 
-        //auth = FirebaseAuth.getInstance()
-        /*val user = auth.currentUser
-
-        if (user == null) {
-            Toast.makeText(this, "User not logged in", Toast.LENGTH_SHORT).show()
-            startActivity(Intent(this, LoginPage::class.java))
-            finish()
-            return
-        }
-
-         */
-
         database = FirebaseDatabase.getInstance().getReference("PhinmaLearningApp")
             .child("Users")
             //.child(user.uid)
 
-
+        val course = findViewById<ImageButton>(R.id.course)
+        val modality = findViewById<ImageButton>(R.id.modules)
+        val maps = findViewById<ImageButton>(R.id.maps)
+        val profile = findViewById<ImageButton>(R.id.profile)
+        course.setOnClickListener {
+            val intent = Intent(this, Course::class.java)
+            startActivity(intent)
+            finish()
+        }
+        modality.setOnClickListener {
+            val intent = Intent(this, HomePage::class.java)
+            startActivity(intent)
+            finish()
+        }
+        maps.setOnClickListener {
+            val intent = Intent(this, Maps::class.java)
+            startActivity(intent)
+            finish()
+        }
+        profile.setOnClickListener {
+            val intent = Intent(this, Profile::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         studentName = findViewById(R.id.stuName)
         val editProf = findViewById<Button>(R.id.editProf)
         val viewProf = findViewById<Button>(R.id.viewProf)
-        val btnHP = findViewById<Button>(R.id.btnHP)
         val logOut = findViewById<TextView>(R.id.logoutbtn)
 
         studentName.text = "Loading..."
@@ -66,10 +77,6 @@ class Profile : AppCompatActivity() {
         viewProf.setOnClickListener {
             startActivity(Intent(this, Profile_view::class.java))
         }
-
-        btnHP.setOnClickListener {
-            startActivity(Intent(this, Home_Page::class.java))
-        }
     }
 
 
@@ -82,6 +89,7 @@ class Profile : AppCompatActivity() {
 
 
 
+    @SuppressLint("SetTextI18n")
     private fun loadProfileData() {
         database.child("stuName").get().addOnSuccessListener { snapshot ->
             if (snapshot.exists()) {

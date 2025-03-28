@@ -10,8 +10,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class thirdFloor : AppCompatActivity() {
     @SuppressLint("MissingInflatedId", "ClickableViewAccessibility", "SetTextI18n")
@@ -21,7 +19,7 @@ class thirdFloor : AppCompatActivity() {
         setContentView(R.layout.activity_third_floor)
 
         val rootLayout = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.main)
-        val pass = Intent(this, maps::class.java)
+        val pass = Intent(this, Maps::class.java)
         val btnBack3 = findViewById<Button>(R.id.backBtn)
         val image = findViewById<ImageView>(R.id.imagePin)
         val roomBoard  = findViewById<TextView>(R.id.roomBoard)

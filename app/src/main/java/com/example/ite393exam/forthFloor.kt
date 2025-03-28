@@ -18,7 +18,7 @@ class forthFloor : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_forth_floor)
 
-        val pass = Intent(this, maps::class.java)
+        val pass = Intent(this, Maps::class.java)
         val btnBack = findViewById<Button>(R.id.backBtn)
         val rootLayout = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.main)
         val image = findViewById<ImageView>(R.id.imagePin)

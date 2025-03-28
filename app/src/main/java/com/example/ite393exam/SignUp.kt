@@ -25,14 +25,18 @@ class SignUp : AppCompatActivity() {
     private lateinit var studentPassword: EditText
     private lateinit var studentRePassword: EditText
     private lateinit var signUp: Button
-
+    private var campusName : String? = null
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_sign_up)
-
         campus = findViewById(R.id.spinner)
+        studentId = findViewById(R.id.studentId)
+        studentName = findViewById(R.id.studentName)
+        studentPassword = findViewById(R.id.password)
+        studentRePassword = findViewById(R.id.rePassword)
+        signUp = findViewById(R.id.signUpBtn)
         ArrayAdapter.createFromResource(
             this,
             R.array.campus,
@@ -41,19 +45,24 @@ class SignUp : AppCompatActivity() {
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             campus.adapter = adapter
         }
-        studentId = findViewById(R.id.studentId)
-        studentName = findViewById(R.id.studentName)
-        studentPassword = findViewById(R.id.password)
-        studentRePassword = findViewById(R.id.rePassword)
-        signUp = findViewById(R.id.signUpBtn)
+        campusName = intent.getStringExtra("campus")
+
 
         val selectedCampus = campus.selectedItem.toString()
+
         dbRef = FirebaseDatabase.getInstance().getReference(selectedCampus)
         signUp.setOnClickListener {
-            if (studentPassword.text.toString() != studentRePassword.text.toString()){
-                studentPassword.error = "Passwords do not match"
-                studentRePassword.error = "Passwords do not match"
-            }else signUpStudent(selectedCampus)
+            if ((studentPassword.text.toString() != studentRePassword.text.toString()) || (studentPassword.text.isEmpty() && studentRePassword.text.isEmpty())){
+                studentPassword.error = "Passwords do not match or not filled"
+                studentRePassword.error = "Passwords do not match or not filled"
+            }else {
+                if (studentId.text.isEmpty() && studentName.text.isEmpty()){
+                    studentId.error = "Field not filled..."
+                    studentName.error = "Field not filled..."
+                }else {
+                    signUpStudent(selectedCampus)
+                }
+            }
         }
     }
 

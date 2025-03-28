@@ -9,6 +9,7 @@
     tools:context=".secondFloor">
 
     <TextView
+        android:textStyle="bold"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/bg_corners"
@@ -20,22 +21,22 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.070"
+        app:layout_constraintVertical_bias="0.027"
         tools:ignore="HardcodedText" />
-
 
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/rounded_button"
         android:text="@string/Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.049"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.070" />
+        app:layout_constraintVertical_bias="0.027" />
 
     <ImageView
         android:id="@+id/mapTwo"

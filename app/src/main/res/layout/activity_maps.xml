@@ -5,13 +5,26 @@
     android:background="@drawable/ite393_2nd_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".maps">
+    tools:context=".Maps">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:id="@+id/imageView10"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/phinmaedlogo"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
 
     <android.widget.Button
         android:id="@+id/btnFloor1"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:background="@drawable/rounded_button"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="1ST Floor"
@@ -23,75 +36,82 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFloor2"
-        app:layout_constraintVertical_bias="0.098" />
+        app:layout_constraintVertical_bias="0.096"
+        tools:ignore="HardcodedText,TextSizeCheck,VisualLintOverlap" />
 
     <android.widget.Button
         android:id="@+id/btnFloor2"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
         android:text="2ND Floor"
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFloor3"
-        app:layout_constraintVertical_bias="0.079" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <android.widget.Button
         android:id="@+id/btnFloor3"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="3RD Floor"
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFloor4"
-        app:layout_constraintVertical_bias="0.058" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <android.widget.Button
         android:id="@+id/btnFloor4"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="4TH Floor"
         android:textSize="20sp"
         android:textStyle="bold"
+
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.224" />
+        app:layout_constraintTop_toBottomOf="@+id/btnFloor5"
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <android.widget.Button
         android:id="@+id/btnFloor5"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
         android:fontFamily="sans-serif"
         android:gravity="center"
         android:text="5TH Floor"
         android:textSize="20sp"
         android:textStyle="bold"
+
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.084" />
+        tools:ignore="HardcodedText,TextSizeCheck" />
 
     <TextView
         android:id="@+id/campusMap"
@@ -109,7 +129,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintVertical_bias="0.202"
+        tools:ignore="TextSizeCheck,TextContrastCheck" />
 
     <android.widget.ImageView
         android:id="@+id/imageView7"
@@ -120,24 +141,153 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/campusMap"
-        app:layout_constraintVertical_bias="0.099" />
+        app:layout_constraintVertical_bias="0.036" />
 
-    <android.widget.Button
-        android:id="@+id/maps_button"
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:background="@drawable/rounded_button"
-        android:backgroundTint="#E7EFE6"
-        android:text="@string/Back"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
+    <TableRow
+        android:id="@+id/tableRow2"
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_corners"
+        android:backgroundTint="#D1C3C3"
+        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintVertical_bias="1.0"
+        tools:ignore="UnknownIdInLayout">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/course"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/course"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.100"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/modules"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/modules"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modalities"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.365"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageButton
+                android:id="@+id/maps"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/maps"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Map"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.625"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            tools:ignore="VisualLintBounds">
+            <ImageButton
+                android:id="@+id/profile"
+                android:layout_width="65dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:backgroundTint="#00FFFFFF"
+                android:contentDescription="@string/app_name"
+                android:scaleType="centerInside"
+                app:srcCompat="@drawable/pogiko"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Profile"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.890"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.975"
+                tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </TableRow>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

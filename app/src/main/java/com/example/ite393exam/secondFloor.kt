@@ -19,7 +19,7 @@ class secondFloor : AppCompatActivity() {
         setContentView(R.layout.activity_second_floor)
 
         val rootLayout = findViewById<androidx.constraintlayout.widget.ConstraintLayout>(R.id.main)
-        val pass = Intent(this, maps::class.java)
+        val pass = Intent(this, Maps::class.java)
         val btnBack2 = findViewById<Button>(R.id.backBtn)
         val image = findViewById<ImageView>(R.id.imagePin)
         val roomBoard  = findViewById<TextView>(R.id.roomBoard)

@@ -10,8 +10,6 @@ import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.firestore.ktx.firestore
@@ -49,7 +47,6 @@ class LoginPage : AppCompatActivity() {
             startActivity(pass)
         }
 
-
         var campus = "None"
         firebaseDatabase = FirebaseDatabase.getInstance()
         if (key) {
@@ -65,13 +62,17 @@ class LoginPage : AppCompatActivity() {
             databaseReference = firebaseDatabase.getReference("PHINMA Cagayan De Oro College")
             campus = "PHINMA Cagayan De Oro College"
         } else if (key3) {
-            imge1.setImageResource(R.drawable.upang_dagupan)
+            imge1.setImageResource(R.drawable.urdaneta)
             databaseReference = firebaseDatabase.getReference("PHINMA University of Pangasinan")
             campus = "PHINMA University of Pangasinan"
         }
 
         loginBtn.setOnClickListener {
-            signInStudent(campus)
+            if (idInput.text.isEmpty() && passwordInput.text.isEmpty()) {
+                idInput.error = "Field not Filled.."
+                passwordInput.error = "Field not Filled.."
+            }
+            else signInStudent(campus)
         }
 
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
@@ -81,7 +82,7 @@ class LoginPage : AppCompatActivity() {
         })
     }
     private fun signInStudent(path: String){
-        val intent = Intent(this, Home_Page::class.java)
+        val intent = Intent(this, HomePage::class.java)
         val studentId = idInput.text.toString()
         val studentPass = passwordInput.text.toString()
         val ref = db.collection(path).document(studentId)
