@@ -48,7 +48,6 @@ class about : AppCompatActivity() {
         btnback.setOnClickListener{
             startActivity(intention)
         }
-
         linkTomaps_2.setOnClickListener {
             val uri =
                 "geo:16.0471,120.3425?q=28WV+R2R,+Arellano+St,+Downtown+District,+Dagupan,+Pangasinan".toUri()
