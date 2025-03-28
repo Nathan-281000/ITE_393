@@ -46,7 +46,6 @@ class about : AppCompatActivity() {
             if (intent.resolveActivity(packageManager) != null) {
                 startActivity(intent)
             }
-
         }
 
         btnback.setOnClickListener{
