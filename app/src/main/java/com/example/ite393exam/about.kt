@@ -68,6 +68,5 @@ class about : AppCompatActivity() {
                 startActivity(intention)
             }
         })
-
     }
 }
