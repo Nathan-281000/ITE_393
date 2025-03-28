@@ -32,7 +32,6 @@ class about : AppCompatActivity() {
             startActivity(pass)
             finish()
         }
-
         val linkTomaps: TextView = findViewById(R.id.maps)
         val linkTomaps_2: TextView = findViewById(R.id.maps_2)
 
