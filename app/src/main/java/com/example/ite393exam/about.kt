@@ -47,7 +47,6 @@ class about : AppCompatActivity() {
                 startActivity(intent)
             }
         }
-
         btnback.setOnClickListener{
             startActivity(intention)
         }
