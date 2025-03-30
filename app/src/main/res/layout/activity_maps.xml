@@ -24,6 +24,7 @@
         android:id="@+id/btnFloor1"
         android:layout_width="150dp"
         android:layout_height="50dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_button"
         android:fontFamily="sans-serif-black"
         android:gravity="center"
@@ -31,12 +32,10 @@
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnFloor2"
-        app:layout_constraintVertical_bias="0.096"
         tools:ignore="HardcodedText,TextSizeCheck,VisualLintOverlap" />
 
     <android.widget.Button
@@ -86,7 +85,6 @@
         android:text="4TH Floor"
         android:textSize="20sp"
         android:textStyle="bold"
-
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -105,7 +103,6 @@
         android:text="5TH Floor"
         android:textSize="20sp"
         android:textStyle="bold"
-
         app:cornerRadius="0dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -156,15 +153,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView2"
+        app:layout_constraintTop_toBottomOf="@+id/btnFloor1"
         app:layout_constraintVertical_bias="1.0"
         tools:ignore="UnknownIdInLayout">
 
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/course"
@@ -175,6 +172,7 @@
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/course"
                 tools:ignore="DuplicateSpeakableTextCheck" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -193,8 +191,8 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/modules"
@@ -227,8 +225,8 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:gravity="center">
+            android:gravity="center"
+            android:orientation="vertical">
 
             <ImageButton
                 android:id="@+id/maps"
@@ -260,9 +258,10 @@
         <LinearLayout
             android:layout_width="100dp"
             android:layout_height="match_parent"
-            android:orientation="vertical"
             android:gravity="center"
+            android:orientation="vertical"
             tools:ignore="VisualLintBounds">
+
             <ImageButton
                 android:id="@+id/profile"
                 android:layout_width="65dp"
@@ -274,6 +273,7 @@
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/pogiko"
                 tools:ignore="DuplicateSpeakableTextCheck" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"

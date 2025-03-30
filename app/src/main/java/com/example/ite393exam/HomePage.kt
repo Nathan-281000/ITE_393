@@ -123,7 +123,6 @@ class HomePage : AppCompatActivity() {
             startActivity(about)
             finish()
         }
-
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
                 goToFragment(LoggingOut())
