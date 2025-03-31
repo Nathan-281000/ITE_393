@@ -21,132 +21,262 @@
         app:srcCompat="@drawable/phinmaedlogo"
         tools:ignore="ContentDescription,ImageContrastCheck" />
 
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInput_forID"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:counterEnabled="true"
-        app:counterMaxLength="20"
-        app:endIconMode="clear_text"
-        app:helperText="Required"
+    <ScrollView
+        android:paddingTop="10dp"
+        android:id="@+id/scrollView3"
+        android:layout_width="300dp"
+        android:layout_height="440dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.328">
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintVertical_bias="0.036">
 
-        <EditText
-            android:id="@+id/studentId"
-            android:layout_width="250dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Student ID"
-            android:inputType="text"
-            android:paddingHorizontal="5dp"
-            android:textColor="@color/black"
-            android:textColorHint="#5E000000"
-            android:textStyle="bold"
-            tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:orientation="vertical"
+            android:gravity="center">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInput_forID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:helperText="Required">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInput_forName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:counterEnabled="true"
-        app:counterMaxLength="20"
-        app:endIconMode="clear_text"
-        app:helperText="Required"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.44">
+                <EditText
+                    android:id="@+id/studentId"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Student ID"
+                    android:inputType="text"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5E000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,HardcodedText,RtlSymmetry" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-        <EditText
-            android:id="@+id/studentName"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Full Name: Juan Peralta Dela Cruz"
-            android:inputType="text"
-            android:paddingHorizontal="5dp"
-            android:textColor="@color/black"
-            android:textColorHint="#5E000000"
-            android:textStyle="bold"
-            tools:ignore="Autofill,HardcodedText" />
-    </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInput_forLastName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:helperText="Required">
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:background="@drawable/bg_round"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInput_forName"
-        app:layout_constraintVertical_bias="0.023" />
+                <EditText
+                    android:id="@+id/studentLastName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Last Name"
+                    android:inputType="text"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5E000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInput_forFirstName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:helperText="Required">
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInput_forPassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:endIconMode="password_toggle"
-        app:helperText="Required"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.644">
+                <EditText
+                    android:id="@+id/studentFirstName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="First Name"
+                    android:inputType="text"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5E000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInput_forMiddleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="20"
+                app:endIconMode="clear_text"
+                app:helperText="Required">
 
-        <EditText
-            android:id="@+id/password"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Password"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:paddingHorizontal="5dp"
-            android:textColor="@color/black"
-            android:textColorHint="#5E000000"
-            android:textStyle="bold"
-            tools:ignore="Autofill,HardcodedText" />
-    </com.google.android.material.textfield.TextInputLayout>
+                <EditText
+                    android:id="@+id/studentMiddleName"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Middle Name"
+                    android:inputType="text"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5E000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInput_forRePassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:endIconMode="password_toggle"
-        app:helperText="Required"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <Spinner
+                android:id="@+id/spinnerGender"
+                android:background="@drawable/bg_round"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"/>
 
-        <EditText
-            android:id="@+id/rePassword"
-            android:layout_width="250dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Re Enter Password"
-            android:inputType="textPassword"
-            android:minHeight="48dp"
-            android:paddingHorizontal="5dp"
-            android:textColor="@color/black"
-            android:textColorHint="#5E000000"
-            android:textStyle="bold"
-            tools:ignore="Autofill,HardcodedText" />
-    </com.google.android.material.textfield.TextInputLayout>
+            <GridLayout
+                android:layout_width="250dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:rowCount="2"
+                android:columnCount="3">
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="83dp"
+                    android:layout_row="0"
+                    android:layout_column="0"
+                    android:text="Day"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="83dp"
+                    android:layout_row="0"
+                    android:layout_column="1"
+                    android:text="Month"
+                    tools:ignore="HardcodedText" />
+                <TextView
+                    android:gravity="center"
+                    android:layout_width="83dp"
+                    android:layout_row="0"
+                    android:layout_column="2"
+                    android:text="Year"
+                    tools:ignore="HardcodedText" />
+
+                <Spinner
+                    android:id="@+id/days"
+                    android:background="@drawable/bg_round"
+                    android:layout_columnWeight="0"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:layout_width="83dp"
+                    android:layout_height="60dp"/>
+                <Spinner
+                    android:id="@+id/months"
+                    android:background="@drawable/bg_round"
+                    android:layout_columnWeight="0"
+                    android:layout_row="1"
+                    android:layout_column="1"
+                    android:layout_width="83dp"
+                    android:layout_height="60dp"/>
+                <Spinner
+                    android:id="@+id/years"
+                    android:background="@drawable/bg_round"
+                    android:layout_columnWeight="0"
+                    android:layout_row="1"
+                    android:layout_column="2"
+                    android:layout_width="84dp"
+                    android:layout_height="60dp"/>
+            </GridLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="University"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <Spinner
+                android:id="@+id/spinner"
+                android:background="@drawable/bg_round"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="College"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <Spinner
+                android:id="@+id/spinnerCollege"
+                android:background="@drawable/bg_round"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Course"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+            <Spinner
+                android:id="@+id/spinnerCourse"
+                android:background="@drawable/bg_round"
+                android:layout_width="250dp"
+                android:layout_height="60dp"
+                android:layout_marginBottom="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInput_forPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:helperText="Required">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5E000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInput_forRePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:endIconMode="password_toggle"
+                app:helperText="Required">
+
+                <EditText
+                    android:id="@+id/rePassword"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Re Enter Password"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:paddingHorizontal="5dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#5E000000"
+                    android:textStyle="bold"
+                    tools:ignore="Autofill,HardcodedText" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+    </ScrollView>
 
     <android.widget.Button
         android:id="@+id/signUpBtn"
@@ -165,20 +295,22 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.844"
+        app:layout_constraintVertical_bias="0.859"
         tools:ignore="HardcodedText" />
 
     <TextView
+        android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Sign Up"
         android:textSize="40sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textInput_forID"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.896"
+        app:layout_constraintVertical_bias="0.235"
         tools:ignore="HardcodedText,TextContrastCheck" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
