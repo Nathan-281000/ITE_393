@@ -13,7 +13,7 @@ class Course : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_course)
-        val course = findViewById<ImageButton>(R.id.course)
+        val course = findViewById<ImageButton>(R.id.coursebtn)
         val modality = findViewById<ImageButton>(R.id.modules)
         val maps = findViewById<ImageButton>(R.id.maps)
         val profile = findViewById<ImageButton>(R.id.profile)

@@ -10,10 +10,10 @@
 
 
     <ScrollView
-        android:layout_marginVertical="10dp"
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="760dp"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="110dp"
         android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -30,6 +30,7 @@
             android:orientation="vertical">
 
             <ImageView
+                android:layout_marginTop="30dp"
                 android:id="@+id/imageView3"
                 android:layout_width="match_parent"
                 android:layout_height="158dp"
@@ -172,7 +173,8 @@
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
@@ -202,7 +204,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
@@ -236,7 +239,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
@@ -270,7 +274,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"

@@ -13,12 +13,11 @@
 
 
     <ScrollView
-        android:layout_marginVertical="20dp"
+        android:layout_marginBottom="100dp"
         android:id="@+id/scrollView2"
         android:layout_width="match_parent"
-        android:layout_height="760dp"
+        android:layout_height="match_parent"
         android:background="#00FFFFFF"
-        android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.488"
@@ -37,6 +36,7 @@
             tools:ignore="ExtraText">
 
             <ImageView
+                android:layout_marginTop="20dp"
                 android:id="@+id/imageView8"
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
@@ -1160,7 +1160,8 @@
         tools:ignore="UnknownIdInLayout">
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
@@ -1190,7 +1191,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
@@ -1224,7 +1226,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center">
@@ -1258,7 +1261,8 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="100dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
             android:gravity="center"

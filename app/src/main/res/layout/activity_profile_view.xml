@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Profile_view">
+    tools:context=".ProfileView">
 
     <android.widget.Button
         android:id="@+id/backBtn"
@@ -17,7 +17,8 @@
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="HardcodedText"/>
 
     <androidx.cardview.widget.CardView
         android:layout_marginTop="70dp"
@@ -45,7 +46,8 @@
                     android:layout_height="wrap_content"
                     android:text="Personal Details"
                     android:textSize="22sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -54,53 +56,66 @@
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
-                            android:layout_marginHorizontal="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="10dp"
+                            android:hint="Student Id"
                             android:textSize="15sp"
-                            android:hint="Student Id"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
+                            android:id="@+id/stuID"
                             android:layout_marginTop="10dp"
                             android:layout_marginHorizontal="10dp"
                             android:textSize="15sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="03-2122-031549"/>
+                            android:text="03-2122-031549"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="10dp"
-                            android:layout_marginHorizontal="10dp"
-                            android:textSize="15sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:hint="College"/>
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="College"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
+                            android:id="@+id/college"
                             android:layout_marginTop="10dp"
                             android:layout_marginHorizontal="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="CITE"/>
+                            android:text="CITE"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="10dp"
-                            android:textSize="15sp"
-                            android:layout_marginHorizontal="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:hint="Semester"/>
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="Semester"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:layout_marginTop="10dp"
                             android:layout_marginHorizontal="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="Y2S2"/>
+                            android:text="Y2S2"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="10dp"
-                            android:textSize="15sp"
-                            android:layout_marginHorizontal="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:hint="Date of Birth"/>
+                            android:layout_marginHorizontal="10dp"
+                            android:layout_marginTop="10dp"
+                            android:hint="Date of Birth"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuBirthDate"
                             android:layout_marginTop="10dp"
@@ -108,13 +123,16 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="03-07-2004"/>
+                            android:text="03-07-2004"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:textSize="15sp"
-                            android:layout_marginHorizontal="10dp"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:hint="Gender"/>
+                            android:layout_marginHorizontal="10dp"
+                            android:hint="Gender"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuGender"
                             android:layout_marginVertical="10dp"
@@ -122,55 +140,68 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="Male"/>
+                            android:text="Male"
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:hint="Student Name"
-                            android:textSize="15sp"/>
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuName"
                             android:textSize="15sp"
-                            android:layout_marginRight="10dp"
+                            android:layout_marginStart="10dp"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Sarmiento, Mark Paul Peralta"/>
+                            android:text="Sarmiento, Mark Paul Peralta"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:hint="Course"
                             android:textSize="15sp"
-                            android:hint="Course"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
+                            android:id="@+id/course"
                             android:textSize="15sp"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Bachelor of Science-Computer Science"/>
+                            android:text="Bachelor of Science-Computer Science"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="Father's Name"
                             android:textSize="15sp"
-                            android:hint="Father's Name"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuFather"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="Paul L. Sarmiento"/>
+                            android:text="Paul L. Sarmiento"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
                             android:hint="Mother's Name"
                             android:textSize="15sp"
-                            android:layout_marginTop="10dp"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
 
                         <TextView
                             android:id="@+id/stuMother"
@@ -178,6 +209,7 @@
                             android:layout_height="wrap_content"
                             android:layout_marginTop="10dp"
                             android:text="Marites P. Sarmiento"
+                            tools:ignore="HardcodedText"
                             android:textSize="15sp" />
                     </LinearLayout>
                 </LinearLayout>
@@ -187,7 +219,8 @@
                     android:textSize="22sp"
                     android:layout_margin="10dp"
                     android:textStyle="bold"
-                    android:text="Contact Details"/>
+                    android:text="Contact Details"
+                    tools:ignore="HardcodedText"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -196,12 +229,14 @@
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="15sp"
                             android:layout_marginStart="10sp"
-                            android:hint="Student Mobile No"/>
+                            android:hint="Student Mobile No"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuNumber"
                             android:layout_marginStart="10sp"
@@ -209,14 +244,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="09476938242"/>
+                            android:text="09476938242"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="30dp"
-                            android:layout_marginStart="10sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginTop="30dp"
+                            android:hint="Father's Mobile No"
                             android:textSize="15sp"
-                            android:hint="Father's Mobile No"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuFatherNumber"
                             android:layout_marginStart="10sp"
@@ -224,37 +262,45 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="09283555810"/>
+                            android:text="09283555810"
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:hint="Email"
+                            android:textColorHint="#757575"
                             android:textSize="15sp"
-                            android:hint="Email"/>
+                            tools:ignore="HardcodedText" />
                         <TextView
                             android:id="@+id/stuEmail"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="mape.sarmiento.up@phinmaed.com"/>
+                            android:text="mape.sarmiento.up@phinmaed.com"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="Mother's Mobile No"
                             android:textSize="15sp"
-                            android:hint="Mother's Mobile No"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuMotherNumber"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="09283555810"/>
+                            android:text="09283555810"
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                 </LinearLayout>
                 <TextView
@@ -263,74 +309,91 @@
                     android:textSize="22sp"
                     android:layout_margin="10dp"
                     android:textStyle="bold"
-                    android:text="Emergency Person Contact Details"/>
+                    android:text="Emergency Person Contact Details"
+                    tools:ignore="HardcodedText"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
+
                     <LinearLayout
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:orientation="vertical">
+                        android:orientation="vertical"
+                        tools:ignore="TextSizeCheck">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="15sp"
                             android:layout_marginStart="10sp"
-                            android:hint="Person Name"/>
+                            android:hint="Person Name"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
+
                         <TextView
                             android:id="@+id/stuGuardian"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
                             android:layout_marginStart="10sp"
                             android:layout_marginTop="10dp"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:text="Paul L. Sarmiento"
                             android:textSize="15sp"
-                            android:text="Paul L. Sarmiento"/>
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="30dp"
-                            android:layout_marginStart="10sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginTop="30dp"
+                            android:hint="Address"
                             android:textSize="15sp"
-                            android:hint="Address"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
+
                         <TextView
                             android:id="@+id/stuGuardianAddress"
-                            android:layout_marginStart="10sp"
-                            android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginTop="10dp"
+                            android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"
                             android:textSize="15sp"
-                            android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"/>
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:hint="Relation"
                             android:textSize="15sp"
-                            android:hint="Relation"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuRelation"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="Father"/>
+                            android:text="Father"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="Mobile No"
                             android:textSize="15sp"
-                            android:hint="Mobile No"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuGuardianNumber"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="09283555810"/>
+                            android:text="09283555810"
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                 </LinearLayout>
                 <TextView
@@ -339,7 +402,8 @@
                     android:textSize="22sp"
                     android:layout_margin="10dp"
                     android:textStyle="bold"
-                    android:text="Current Address"/>
+                    android:text="Current Address"
+                    tools:ignore="HardcodedText"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -348,12 +412,14 @@
                         android:layout_width="200dp"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:textSize="15sp"
                             android:layout_marginStart="10sp"
-                            android:hint="Address"/>
+                            android:hint="Address"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuCurrentAddress"
                             android:layout_marginStart="10sp"
@@ -361,14 +427,17 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
+                            tools:ignore="HardcodedText"
                             android:text="Sitio Peralta Oraan East, Manaoag, Pangasinan"/>
+
                         <TextView
-                            android:layout_marginTop="30dp"
-                            android:layout_marginStart="10sp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginStart="10sp"
+                            android:layout_marginTop="30dp"
+                            android:hint="Province"
                             android:textSize="15sp"
-                            android:hint="Province"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuCurrentProvince"
                             android:layout_marginStart="10sp"
@@ -376,37 +445,44 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="Pangasinan"/>
+                            android:text="Pangasinan"
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:hint="Country"
                             android:textSize="15sp"
-                            android:hint="Country"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuCurrentCountry"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="PHILIPPINES"/>
+                            android:text="PHILIPPINES"
+                            tools:ignore="HardcodedText"/>
+
                         <TextView
-                            android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:hint="City"
                             android:textSize="15sp"
-                            android:hint="City"/>
+                            tools:ignore="HardcodedText,TextContrastCheck" />
                         <TextView
                             android:id="@+id/stuCurrentCity"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="Manaoag"/>
+                            android:text="Manaoag"
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                 </LinearLayout>
                 <TextView
@@ -415,7 +491,8 @@
                     android:textSize="22sp"
                     android:layout_margin="10dp"
                     android:textStyle="bold"
-                    android:text="Permanent Address"/>
+                    android:text="Permanent Address"
+                    tools:ignore="HardcodedText"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -429,7 +506,8 @@
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
                             android:layout_marginStart="10sp"
-                            android:hint="Address"/>
+                            android:hint="Address"
+                            tools:ignore="HardcodedText"/>
                         <TextView
                             android:id="@+id/stuPermanentAddress"
                             android:layout_marginStart="10sp"
@@ -437,6 +515,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
+                            tools:ignore="HardcodedText"
                             android:text="Sitio Peralta Oraan East, Manaoag, Pangasinan"/>
                         <TextView
                             android:layout_marginTop="30dp"
@@ -444,7 +523,8 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:hint="Province"/>
+                            android:hint="Province"
+                            tools:ignore="HardcodedText"/>
                         <TextView
                             android:id="@+id/stuPermanentProvince"
                             android:layout_marginStart="10sp"
@@ -453,6 +533,7 @@
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
                             android:text="Pangasinan"
+                            tools:ignore="HardcodedText"
                             android:layout_marginBottom="20dp"/>
                     </LinearLayout>
                     <LinearLayout
@@ -463,27 +544,31 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:hint="Country"/>
+                            android:hint="Country"
+                            tools:ignore="HardcodedText"/>
                         <TextView
                             android:id="@+id/stuPermanentCountry"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="PHILIPPINES"/>
+                            android:text="PHILIPPINES"
+                            tools:ignore="HardcodedText"/>
                         <TextView
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:hint="City"/>
+                            android:hint="City"
+                            tools:ignore="HardcodedText"/>
                         <TextView
                             android:id="@+id/stuPermanentCity"
                             android:layout_marginTop="10dp"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:textSize="15sp"
-                            android:text="Manaoag"/>
+                            android:text="Manaoag"
+                            tools:ignore="HardcodedText"/>
                     </LinearLayout>
                 </LinearLayout>
             </LinearLayout>

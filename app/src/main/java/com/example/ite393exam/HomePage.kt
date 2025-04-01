@@ -4,6 +4,7 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.CalendarView
+import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -13,6 +14,9 @@ import com.example.ite393exam.databinding.ActivityHomePageBinding
 
 
 class HomePage : AppCompatActivity() {
+    private var userId : String? = null
+    private var university : String? = null
+    private var password : String? = null
     private val eventsMap = mapOf(
         // ✅ Ensuring correct year (2025) for February 14
         "2025-02-14" to "10TH FDC, Valentine's Day",
@@ -83,11 +87,12 @@ class HomePage : AppCompatActivity() {
         binding = ActivityHomePageBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val passCourse = Intent(this, Course::class.java)
-        val passModule = Intent(this, Modules::class.java)
-        val passMap = Intent(this, Maps::class.java)
-        val passProfile = Intent(this, Profile::class.java)
-        val about = Intent(this, about::class.java)
+        userId = intent.getStringExtra("studentId").toString()
+        university = intent.getStringExtra("campus").toString()
+        password = intent.getStringExtra("password").toString()
+
+        Toast.makeText(this, "Welcome $userId", Toast.LENGTH_SHORT).show()
+        Toast.makeText(this, "Welcome to $university", Toast.LENGTH_SHORT).show()
 
         val calendarView = findViewById<CalendarView>(R.id.calendarView)
 
@@ -104,23 +109,43 @@ class HomePage : AppCompatActivity() {
 
 
         binding.course.setOnClickListener {
-            startActivity(passCourse)
+            val intent = Intent(this, Course::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            intent.putExtra("password", password)
+            startActivity(intent)
             finish()
         }
         binding.modules.setOnClickListener {
-            startActivity(passModule)
+            val intent = Intent(this, Modules::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            intent.putExtra("password", password)
+            startActivity(intent)
             finish()
         }
         binding.maps.setOnClickListener {
-            startActivity(passMap)
+            val intent = Intent(this, Maps::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            intent.putExtra("password", password)
+            startActivity(intent)
             finish()
         }
         binding.profile.setOnClickListener {
-            startActivity(passProfile)
+            val intent = Intent(this, Profile::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            intent.putExtra("password", password)
+            startActivity(intent)
             finish()
         }
         binding.about.setOnClickListener {
-            startActivity(about)
+            val intent = Intent(this, about::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            intent.putExtra("password", password)
+            startActivity(intent)
             finish()
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {

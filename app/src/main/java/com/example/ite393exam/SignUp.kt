@@ -177,7 +177,7 @@ class SignUp : AppCompatActivity() {
             course))
             .addOnSuccessListener {
                 Toast.makeText(this, "Student Account Created Successfully", Toast.LENGTH_LONG).show()
-                val intent = Intent(this, LoginPage::class.java)
+                val intent = Intent(this, MainActivity::class.java)
                 startActivity(intent)
                 finish()
             }
