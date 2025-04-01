@@ -337,7 +337,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginEnd="10dp"
                 tools:ignore="HardcodedText" />"
-                tools:ignore="HardcodedText" />
+            tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1026,33 +1026,33 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="– No maintaining grades\n– Applicable during summer if required in the curriculum"
                 android:padding="10dp"
+                android:text="– No maintaining grades\n– Applicable during summer if required in the curriculum"
                 android:textAlignment="textStart"
-                android:textSize="14sp"
                 android:textColor="@color/black"
-                tools:ignore="HardcodedText" />
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="9sp"
                 android:text="Requirements: "
                 android:textAlignment="textStart"
-                android:textSize="18sp"
-                android:padding="9sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                tools:ignore="HardcodedText" />
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="– Birth Certificates of each sibling\n– Certificate of Matriculation"
                 android:padding="10dp"
+                android:text="– Birth Certificates of each sibling\n– Certificate of Matriculation"
                 android:textAlignment="textStart"
-                android:textSize="14sp"
                 android:textColor="@color/black"
-                tools:ignore="HardcodedText" />
+                android:textSize="14sp"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <android.widget.TextView
                 android:layout_width="350dp"
@@ -1101,13 +1101,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="9sp"
                 android:text="Eligibility:"
                 android:textAlignment="textStart"
-                android:textSize="18sp"
-                android:padding="9sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                tools:ignore="HardcodedText" />
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1122,13 +1122,13 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="9sp"
                 android:text="Requirements: "
                 android:textAlignment="textStart"
-                android:textSize="18sp"
-                android:padding="9sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
-                tools:ignore="HardcodedText" />
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextContrastCheck" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -1139,6 +1139,515 @@
                 android:textSize="14sp"
                 android:textColor="@color/black"
                 tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-medium"
+                android:background="@drawable/rounded_border"
+                android:layout_margin="20dp"
+                android:text="STUDENT MANUAL"
+                android:padding="30dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:id="@+id/text1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="INTRODUCTION"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,UnusedAttribute" />
+
+            <TextView
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:id="@+id/text2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/phinmahandbook"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma1"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:id="@+id/text5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:justificationMode="inter_word"
+                android:padding="10dp"
+                android:text="@string/phinma2"
+                android:textColor="@color/black"
+                tools:ignore="RtlHardcoded,TextContrastCheck,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:text="@string/phinma3"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text7"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma4"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text8"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma5"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text9"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma6"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma7"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma8"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text12"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/phinmahandbook"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text13"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:text="@string/phinma9"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text14"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma10"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text15"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma11"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/phinma12"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma13"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text18"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma14"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text19"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/phinma15"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/phinma16"
+                android:textStyle="bold"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text21"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma17"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/phinma18"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text23"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/phinma19"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/tex24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma20"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text25"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/phinma21"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text26"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma22"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text27"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/phinma23"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text28"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:text="@string/phinma24"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text29"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/phinma25"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text30"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma26"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text31"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/phinma27"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text32"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma28"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text33"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma29"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text34"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma30"
+                tools:ignore="UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text35"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma31"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text36"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma32"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text37"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:text="@string/phinma33"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text38"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma34"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text39"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"
+                android:gravity="left"
+                android:text="@string/phinma35"
+                tools:ignore="RtlHardcoded,UnusedAttribute,VisualLintLongText" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/text40"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="left"
+                android:text="@string/phinma36"
+                android:textStyle="bold"
+                tools:ignore="RtlHardcoded,UnusedAttribute" />
+
+            <TextView
+                android:padding="10dp"
+                android:justificationMode="inter_word"
+                android:id="@+id/tex41"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:text="@string/phinma37"
+                tools:ignore="UnusedAttribute,VisualLintLongText" />
 
         </LinearLayout>
     </ScrollView>
@@ -1167,9 +1676,9 @@
             android:gravity="center">
 
             <ImageButton
-                android:id="@+id/course"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:id="@+id/coursebtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/app_name"
                 android:scaleType="centerInside"
@@ -1199,8 +1708,8 @@
 
             <ImageButton
                 android:id="@+id/modules"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="#00FFFFFF"
@@ -1212,9 +1721,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modalities"
+                android:gravity="center"
+                android:text="Modalities and Student Handbook"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+                android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.365"
@@ -1234,8 +1745,8 @@
 
             <ImageButton
                 android:id="@+id/maps"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="#00FFFFFF"
@@ -1269,8 +1780,8 @@
             tools:ignore="VisualLintBounds">
             <ImageButton
                 android:id="@+id/profile"
-                android:layout_width="65dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="#00FFFFFF"

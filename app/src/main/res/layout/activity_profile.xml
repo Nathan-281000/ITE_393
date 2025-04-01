@@ -22,6 +22,7 @@
         app:layout_constraintVertical_bias="0.201">
 
         <ImageView
+            android:src="@drawable/person"
             android:id="@+id/profilePicture"
             android:layout_width="200dp"
             android:layout_height="200dp"
@@ -255,22 +256,21 @@
         tools:ignore="UnknownIdInLayout">
 
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/coursebtn"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:backgroundTint="#00FFFFFF"
                 android:contentDescription="@string/app_name"
                 android:scaleType="centerInside"
                 app:srcCompat="@drawable/course"
                 tools:ignore="DuplicateSpeakableTextCheck" />
-
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -287,16 +287,16 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/modules"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="#00FFFFFF"
@@ -308,9 +308,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Modalities"
+                android:gravity="center"
+                android:text="Modalities and Student Handbook"
                 android:textColor="@color/black"
                 android:textStyle="bold"
+                android:textSize="11sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.365"
@@ -322,16 +324,16 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:gravity="center">
 
             <ImageButton
                 android:id="@+id/maps"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="#00FFFFFF"
@@ -357,17 +359,16 @@
         </LinearLayout>
 
         <LinearLayout
+            android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:gravity="center"
             android:orientation="vertical"
+            android:gravity="center"
             tools:ignore="VisualLintBounds">
-
             <ImageButton
                 android:id="@+id/profile"
-                android:layout_width="65dp"
-                android:layout_height="60dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:backgroundTint="#00FFFFFF"

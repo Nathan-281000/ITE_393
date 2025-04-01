@@ -37,6 +37,4 @@ class LoggingOut : Fragment() {
         fragmentTransaction.remove(this)
         fragmentTransaction.commit()
     }
-
-
 }

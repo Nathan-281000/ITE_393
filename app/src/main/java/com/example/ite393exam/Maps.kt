@@ -12,6 +12,8 @@ import androidx.appcompat.app.AppCompatActivity
 
 class
 Maps : AppCompatActivity() {
+    private var userId : String? = null
+    private var university : String? = null
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,56 +25,86 @@ Maps : AppCompatActivity() {
         val btnFloor3 = findViewById<Button>(R.id.btnFloor3)
         val btnFloor4 = findViewById<Button>(R.id.btnFloor4)
         val btnFloor5 = findViewById<Button>(R.id.btnFloor5)
-        val pass = Intent(this,HomePage ::class.java)
-        val intent =  Intent(this,firstFloor::class.java)
-        val intent2 =  Intent(this,secondFloor::class.java)
-        val intent3 =  Intent(this,thirdFloor::class.java)
-        val intent4 =  Intent(this,forthFloor::class.java)
-        val intent5 =  Intent(this,fifthFloor::class.java)
 
         btnFloor1.setOnClickListener {
+            val intent =  Intent(this,firstFloor::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
             startActivity(intent)
+            finish()
         }
         btnFloor2.setOnClickListener {
-            startActivity(intent2)
+            val intent =  Intent(this,secondFloor::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            startActivity(intent)
+            finish()
         }
         btnFloor3.setOnClickListener {
-            startActivity(intent3)
+            val intent =  Intent(this,thirdFloor::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            startActivity(intent)
+            finish()
         }
         btnFloor4.setOnClickListener {
-            startActivity(intent4)
+            val intent =  Intent(this,forthFloor::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            startActivity(intent)
+            finish()
         }
         btnFloor5.setOnClickListener {
-            startActivity(intent5)
+            val intent =  Intent(this,fifthFloor::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            startActivity(intent)
+            finish()
         }
 
-        val course = findViewById<ImageButton>(R.id.course)
+        userId = intent.getStringExtra("studentId").toString()
+        university = intent.getStringExtra("campus").toString()
+
+
+        val course = findViewById<ImageButton>(R.id.coursebtn)
         val modality = findViewById<ImageButton>(R.id.modules)
         val maps = findViewById<ImageButton>(R.id.maps)
         val profile = findViewById<ImageButton>(R.id.profile)
         course.setOnClickListener {
             val intent = Intent(this, Course::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
             startActivity(intent)
             finish()
         }
         modality.setOnClickListener {
-            val intent = Intent(this, Maps::class.java)
+            val intent = Intent(this, Modules::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
             startActivity(intent)
             finish()
         }
         maps.setOnClickListener {
             val intent = Intent(this, HomePage::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
             startActivity(intent)
             finish()
         }
         profile.setOnClickListener {
             val intent = Intent(this, Profile::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
             startActivity(intent)
             finish()
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true){
             override fun handleOnBackPressed() {
-                startActivity(pass)
+                val intent = Intent(this@Maps, HomePage::class.java)
+                intent.putExtra("studentId", userId)
+                intent.putExtra("campus", university)
+                startActivity(intent)
+                finish()
             }
         })
     }

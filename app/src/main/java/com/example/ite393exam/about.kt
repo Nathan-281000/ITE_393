@@ -26,12 +26,7 @@ class about : AppCompatActivity() {
 
         val btnback = findViewById<Button>(R.id.aboutbck)
         val intention = Intent(this, HomePage::class.java)
-        val pass = Intent(this, student_manual::class.java)
 
-        findViewById<Button>(R.id.manual).setOnClickListener {
-            startActivity(pass)
-            finish()
-        }
         val linkTomaps: TextView = findViewById(R.id.maps)
         val linkTomaps_2: TextView = findViewById(R.id.maps_2)
 

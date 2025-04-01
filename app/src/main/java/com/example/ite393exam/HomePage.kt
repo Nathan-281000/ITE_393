@@ -7,10 +7,12 @@ import android.widget.CalendarView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 import com.example.ite393exam.databinding.ActivityHomePageBinding
+import java.text.SimpleDateFormat
+import java.util.Calendar
+import java.util.Locale
 
 
 class HomePage : AppCompatActivity() {
@@ -76,8 +78,13 @@ class HomePage : AppCompatActivity() {
         "2026-02-14" to "10TH FDC"
     )
 
+    private var selectedDate: String = SimpleDateFormat("yyyy-MM-dd", Locale.getDefault()).format(
+        Calendar.getInstance().time
+    )
+
+
+
     @SuppressLint("MissingInflatedId")
-    private lateinit var fragmentManager: FragmentManager
     private lateinit var binding: ActivityHomePageBinding
 
     @SuppressLint("DefaultLocale")
@@ -89,30 +96,36 @@ class HomePage : AppCompatActivity() {
 
         userId = intent.getStringExtra("studentId").toString()
         university = intent.getStringExtra("campus").toString()
-        password = intent.getStringExtra("password").toString()
 
         Toast.makeText(this, "Welcome $userId", Toast.LENGTH_SHORT).show()
         Toast.makeText(this, "Welcome to $university", Toast.LENGTH_SHORT).show()
 
         val calendarView = findViewById<CalendarView>(R.id.calendarView)
 
+        fun updateUIWithDate(date: String) {
+            val eventDetails = eventsMap[date] ?: "No events on this day"
+            Toast.makeText(this, "Date: $date", Toast.LENGTH_LONG).show()
+            if (!eventDetails.contains("No events on this day")) {
+                val intent = Intent(this, EventActivity::class.java)
+                intent.putExtra("studentId", userId)
+                intent.putExtra("campus", university)
+                intent.putExtra("SELECTED_DATE", date)
+                intent.putExtra("EVENT_DETAILS", eventDetails)
+                startActivity(intent)
+            }
+        }
 
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->
-            val selectedDate = String.format("%04d-%02d-%02d", year, month + 1, dayOfMonth)
-            val eventDetails = eventsMap[selectedDate] ?: "No events on this day"
-            val intent = Intent(this, EventActivity::class.java).apply {
-                putExtra("SELECTED_DATE", selectedDate)
-                putExtra("EVENT_DETAILS", eventDetails)
-            }
-            startActivity(intent)
+            selectedDate = String.format("%04d-%02d-%02d", year, month + 1, dayOfMonth)
+            updateUIWithDate(selectedDate)
         }
 
 
-        binding.course.setOnClickListener {
+
+        binding.coursebtn.setOnClickListener {
             val intent = Intent(this, Course::class.java)
             intent.putExtra("studentId", userId)
             intent.putExtra("campus", university)
-            intent.putExtra("password", password)
             startActivity(intent)
             finish()
         }
@@ -120,7 +133,6 @@ class HomePage : AppCompatActivity() {
             val intent = Intent(this, Modules::class.java)
             intent.putExtra("studentId", userId)
             intent.putExtra("campus", university)
-            intent.putExtra("password", password)
             startActivity(intent)
             finish()
         }
@@ -128,7 +140,6 @@ class HomePage : AppCompatActivity() {
             val intent = Intent(this, Maps::class.java)
             intent.putExtra("studentId", userId)
             intent.putExtra("campus", university)
-            intent.putExtra("password", password)
             startActivity(intent)
             finish()
         }
@@ -136,7 +147,6 @@ class HomePage : AppCompatActivity() {
             val intent = Intent(this, Profile::class.java)
             intent.putExtra("studentId", userId)
             intent.putExtra("campus", university)
-            intent.putExtra("password", password)
             startActivity(intent)
             finish()
         }
@@ -150,14 +160,18 @@ class HomePage : AppCompatActivity() {
         }
         onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                goToFragment(LoggingOut())
+                val builder = AlertDialog.Builder(this@HomePage).setTitle("Logging Out?").setMessage("Are you sure you want to log out?")
+                    .setPositiveButton("Yes") { _, _ ->
+                        startActivity(Intent(this@HomePage, MainActivity::class.java))
+                    }
+                    .setNegativeButton("No") { dialog, _ ->
+                        dialog.dismiss()
+                    }
+                builder.create().show()
             }
         })
     }
 
-    private fun goToFragment(fragment: Fragment) {
-        fragmentManager = supportFragmentManager
-        fragmentManager.beginTransaction().replace(R.id.close_pop, fragment).commit()
-    }
+
 }
 

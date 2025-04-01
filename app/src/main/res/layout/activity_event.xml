@@ -16,26 +16,25 @@
         android:text="@string/Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.049"
+        app:layout_constraintHorizontal_bias="0.108"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.08" />
+        app:layout_constraintVertical_bias="0.233"
+        tools:ignore="VisualLintOverlap" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginTop="16dp"
-        android:elevation="15dp"
-        android:scaleType="fitXY"
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="158dp"
+        android:layout_marginTop="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157"
+        app:layout_constraintVertical_bias="0.019"
         app:srcCompat="@drawable/phinmaedlogo"
-        tools:ignore="ContentDescription" />
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textViewDate"
@@ -49,6 +48,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.362" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.836"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textViewEvents"

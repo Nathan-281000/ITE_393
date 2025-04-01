@@ -57,29 +57,31 @@
 
 
             <TextView
-                android:layout_gravity="center"
-                android:background="@drawable/rounded_border"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
-                android:text="About PHINMA Education"
-                android:textStyle="bold"
-                android:textSize="30sp"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:background="@drawable/rounded_border"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="About PHINMA Education"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
 
             <TextView
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center"
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
-                android:text="@string/about1"
-                android:textStyle="italic"
-                android:textSize="16sp"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="@string/about1"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:paddingTop="10dp"
@@ -91,30 +93,33 @@
                 android:textSize="25sp"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
             <TextView
-                android:layout_gravity="center"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
-                android:text="To make lives better through education"
-                android:textStyle="italic"
-                android:textSize="16sp"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:text="To make lives better through education"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
-                android:paddingTop="20dp"
-                android:layout_gravity="center"
                 android:layout_width="360dp"
                 android:layout_height="match_parent"
-                android:text="Fulfilling our mission through education"
-                android:textStyle="bold"
-                android:textSize="25sp"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:text="Fulfilling our mission through education"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextSizeCheck" />
 
             <TextView
                 android:layout_width="360dp"
@@ -125,19 +130,21 @@
                 android:text="@string/part3"
                 android:textColor="@color/black"
                 android:textSize="16sp"
-                android:textStyle="italic" />
+                android:textStyle="italic"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
-                android:paddingTop="10dp"
-                android:layout_gravity="center"
                 android:layout_width="360dp"
                 android:layout_height="wrap_content"
-                android:text="@string/about3"
-                android:textStyle="italic"
-                android:textSize="16sp"
-                android:textColor="@color/black"
+                android:layout_gravity="center"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center"/>
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:text="@string/about3"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textStyle="italic"
+                tools:ignore="TextSizeCheck" />
 
             <TextView
                 android:paddingTop="10dp"
@@ -174,7 +181,8 @@
                 android:textSize="25sp"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_gravity="center"
@@ -198,7 +206,8 @@
                 android:textSize="30sp"
                 android:textColor="@color/black"
                 android:fontFamily="sans-serif-medium"
-                android:gravity="center"/>
+                android:gravity="center"
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:layout_width="250dp"
@@ -220,7 +229,8 @@
                 android:text="Urdaneta Campus"
                 android:textColor="@color/black"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/maps"
@@ -235,7 +245,7 @@
                 android:textAlignment="center"
                 android:textSize="16sp"
                 android:text="McArthur Highway, Urdaneta City, 2428, Pangasinan"
-            />
+                tools:ignore="HardcodedText" />
 
             <ImageView
                 android:layout_marginTop="50dp"
@@ -256,7 +266,7 @@
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 android:textStyle="bold"
-                />
+                tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/maps_2"
@@ -270,15 +280,8 @@
                 android:layout_gravity="center"
                 android:textAlignment="center"
                 android:textSize="16sp"
-                android:text="28WV+R2R, Arellano St, Downtown District, Dagupan, 2400 Pangasinan" />
-
-            <androidx.appcompat.widget.AppCompatButton
-                android:layout_marginLeft="140dp"
-                android:id="@+id/manual"
-                android:gravity="center"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Student Manual"/>
+                android:text="28WV+R2R, Arellano St, Downtown District, Dagupan, 2400 Pangasinan"
+                tools:ignore="HardcodedText" />
 
         </LinearLayout>
     </ScrollView>

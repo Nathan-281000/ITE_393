@@ -11,6 +11,7 @@ android {
     defaultConfig {
         applicationId = "com.example.ite393exam"
         minSdk = 24
+        //noinspection OldTargetApi
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
@@ -48,7 +49,9 @@ dependencies {
     implementation(libs.play.services.maps)
     implementation(libs.firebase.firestore)
     implementation(libs.firebase.database.ktx)
+    implementation(libs.firebase.storage)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation(libs.glide)
 }

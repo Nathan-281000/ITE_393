@@ -11,8 +11,11 @@ import androidx.activity.OnBackPressedCallback
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.Firebase
 import com.google.firebase.firestore.firestore
+import com.google.firebase.storage.FirebaseStorage
+import com.google.firebase.storage.StorageReference
 
 class Profile : AppCompatActivity() {
+    private lateinit var storageRef : StorageReference
     private var db = Firebase.firestore
     private lateinit var userId : String
     private lateinit var university : String
@@ -27,6 +30,9 @@ class Profile : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile)
+
+        // Initialize Firebase Storage
+        storageRef = FirebaseStorage.getInstance().reference
 
         userId = intent.getStringExtra("studentId").toString()
         university = intent.getStringExtra("campus").toString()
@@ -127,8 +133,15 @@ class Profile : AppCompatActivity() {
             startActivity(intent)
             finish()
         }
-        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
-            override fun handleOnBackPressed() {}
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true){
+            override fun handleOnBackPressed() {
+                val intent = Intent(this@Profile, HomePage::class.java)
+                intent.putExtra("studentId", userId)
+                intent.putExtra("campus", university)
+                startActivity(intent)
+                finish()
+            }
+
         })
     }
 }
