@@ -16,9 +16,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.FragmentManager
 
 @Suppress("SpellCheckingInspection", "SpellCheckingInspection", "SpellCheckingInspection",
     "SpellCheckingInspection", "SpellCheckingInspection", "SpellCheckingInspection",
@@ -29,8 +28,6 @@ import androidx.fragment.app.FragmentManager
     "SpellCheckingInspection"
 )
 class MainActivity : AppCompatActivity() {
-    private lateinit var fragmentManager: FragmentManager
-
     @SuppressLint("MissingInflatedId", "DefaultLocale")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -77,20 +74,20 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, SignUp::class.java)
             startActivity(intent)
         }
-
-
-        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true){
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
             override fun handleOnBackPressed() {
-                goToFragment(ExitApp())
+                val builder = AlertDialog.Builder(this@MainActivity).setTitle("Exit  App?").setMessage("Are you sure you want exit this app?")
+                    .setPositiveButton("Yes") { _, _ ->
+                        finishAffinity()
+                        finishAndRemoveTask()
+                    }
+                    .setNegativeButton("No") { dialog, _ ->
+                        dialog.dismiss()
+                    }
+                builder.create().show()
             }
         })
 
-
-
-
     }
-    private fun goToFragment(fragment: Fragment){
-        fragmentManager = supportFragmentManager
-        fragmentManager.beginTransaction().replace(R.id.message, fragment).commit()
-    }
+
 }

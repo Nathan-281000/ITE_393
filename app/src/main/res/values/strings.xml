@@ -293,4 +293,124 @@ more than 17 absences in a 6-unit subject </string>
         <item>November</item>
         <item>December</item>
     </string-array>
+
+    <string name="courses">
+        Provided Courses: \n
+        1. BS Computer Science \n
+        A Bachelor of Science in Computer Science (BSCS) is an undergraduate degree focused on the principles and practices of computing, programming, and technology. It equips students with a strong foundation in software development, algorithms, data structures, and systems design. Here’s a general description:
+
+        \n Overview \n
+        BS Computer Science is designed for individuals interested in understanding and mastering how computers work and are used to solve complex problems. The program emphasizes computational thinking, problem-solving skills, and the ability to create efficient and innovative software solutions.
+        Core Areas of Study \n
+
+        2. BS Medical Laboratory Science \n
+        This program prepares students to become skilled medical technologists who play a crucial role in healthcare. It focuses on the analysis of human biological samples, the diagnosis of diseases, and the operation of advanced laboratory equipment. Coursework includes clinical chemistry, microbiology, hematology, and immunology. Graduates are equipped for careers in diagnostic laboratories, hospitals, and research.\n
+
+        3. BS Civil Engineering \n
+        This degree equips students with the expertise to design, construct, and maintain infrastructure projects such as buildings, roads, bridges, and water systems. It emphasizes structural design, geotechnical engineering, environmental sustainability, and project management. Graduates often work as civil engineers, urban planners, or consultants. \n
+
+        4. BS Architecture \n
+        The program provides training in the art and science of designing buildings and other structures. It emphasizes creativity, technical skills, and environmental awareness. Coursework includes architectural design, urban planning, sustainable building practices, and computer-aided design (CAD). Graduates can pursue careers as architects, interior designers, or urban planners. \n
+
+        5. BS Tourism Management \n
+        This degree focuses on the management of tourism and hospitality enterprises, including travel agencies, hotels, and event planning companies. Students learn about tourism marketing, cultural heritage, sustainable practices, and customer service. Graduates are prepared for roles in tourism operations, travel consultancy, and destination management. \n
+
+        6. BS Entrepreneurship \n
+        This program fosters innovation and business acumen by teaching students how to develop and manage their own businesses. Topics include business planning, marketing, financial management, and entrepreneurial strategies. Graduates are equipped to start their own enterprises or work in business development roles. \n
+
+        7. BS Accountancy \n
+        BS Accountancy provides students with a strong foundation in financial management, auditing, and taxation. It prepares them for the rigorous Certified Public Accountant (CPA) licensure examination. Graduates are sought after for roles such as accountants, auditors, and financial analysts. \n
+
+        8. BS Accounting Information System \n
+        This specialized degree integrates accounting with information technology. It focuses on using IT systems to process, analyze, and manage financial data efficiently. The curriculum covers accounting principles, database management, systems analysis, and cybersecurity. Graduates can work as IT auditors, systems analysts, or financial systems developers. \n
+
+        9. BS English Language Studies \n
+        This program emphasizes the study of the English language, including its structure, history, and usage in various contexts. It also explores communication, linguistics, and literature. Graduates are well-prepared for careers in education, writing, editing, or communication industries. \n
+    </string>
+    <string name="cpa">
+        Congratulations to both Dagupan and Urdaneta Campuses for producing new CPAs from the September 2023 Licensure Examination.\n\n
+        Shoutout to John Patrick Fronda for dominating the September 2023 Licensure Examination, landing a Top 3 spot!\n\n
+        Urdaneta Campus aced it with a 100% passing rate, while Dagupan Campus achieved an impressive 90.91% passing rate.\n\n
+        You made us all proud!
+    </string>
+    <string name="teacher">
+        In honor of Teacher’s Month, our dedicated educator, Ms. Marijel, shares the story behind her choice to become a teacher.\n \n
+        From a student with uncertain horizons to a guiding force, she’s on a mission to inspire and shape the future of aspiring professionals.
+    </string>
+    <string name="lolo">
+        PHINMA UPang Campus Life Experience
+    </string>
+    <string name="sophia">
+        In PHINMA UPang’s SHS program, I was glad that I got to meet some friendly and reliable classmates with whom I easily got along. On top of that, all the teachers were diligent and approachable. Whenever we needed help with something, be it school-related or personal, they were always just one chat away.\n\n
+        I will always be grateful for my experiences with FlexLearning at PHINMA Upang, for without these, it would be impossible to achieve quality education amidst the pandemic
+    </string>
+    <string name="rad">
+        Para kanino nga ba ang RAD (Remote and Distance Learning) ng PHINMA Education?\n \n
+        Ang RAD Learning ay para sa lahat! Kung ikaw ay nagnanais magkolehiyo ngunit kailangan ng flexible schedule, ang RAD ay para sa iyo!\n \n
+        – Learn under a schedule that works for you\n
+        – Learn from wherever you are\n
+        – Complete the requirements of 2-3 subjects within a month\n
+        – Learn using printed modules and through group discussions via virtual chats and calls\n
+        Enrollment is ongoing! Join our RAD program now!\n
+    </string>
+    <string name="education">
+        How We Make Lives Better Through Education
+    </string>
+    <string name="enroll">
+    Why Enroll at PHINMA University of Pangasinan?\n\n
+    Affordable Excellence for Future-Ready Leaders!\n\n
+    \n At PHINMA UPang, we empower students with quality education that\'s within reach. Here\'s why we stand out:
+    \n - Industry-Aligned Programs: Engineering, Nursing, Business, Teacher Education and IT
+    \n - Real-World Training: Hands-on labs and internships
+    \n - Supportive Learning Environment: Experienced faculty
+    \n - Scholarships and Affordable Fees
+    \n - Values-Based Education
+    \n Your Future Starts Here!
+</string>
+
+    <string name="enrollment">
+    \n How to Enroll at PHINMA University of Pangasinan
+    \n\n A Step-by-Step Guide:
+    \n 1. Check Admission Requirements
+    \n\n For Freshmen:
+    \n\n -Original Grade 12 Report Card
+    \n -Good Moral Certificate
+    \n\n For Transferees:
+    \n\n - Original Transcript of Records
+    \n 2. Choose Your Program
+    \n\n -Engineering
+    \n -Business and Accountancy
+    \n\n 3. Submit Your Application
+    \n -Online or On-Campus
+    \n\n 4. Pay Fees
+        Flexible payment plans available.
+        Contact: 0995-078-5660
+        Website: up.phinma.edu.ph
+</string>
+
+    <string name="scholarship">
+    \n PHINMA UPang Scholarship Opportunities
+    \n Available Financial Aid Programs:
+    \n PEN Scholarship
+    \n For: Top-performing students
+    \n Benefits: 50-100% tuition discount
+    \n Athletic and Arts Scholarships
+    \n For: Talented student-athletes
+    \n Contact: 075-522-2405
+    \n Website: up.phinma.edu.ph
+</string>
+
+    <string name="qualityOfEducation">
+        PHINMA UPang Education Quality
+        \n\n Our Quality Guarantees:
+        \n - CHED-Compliant Programs
+        \n - cIndustry-Experienced Faculty
+        \n - Triple Certification Advantage
+        \n - Proven Graduate Outcomes
+        \n\n - 92% passing rate in licensure exams
+        \n Specialized Learning Facilities:
+        \n\n - Nursing simulation labs
+        \n - Engineering robotics center
+</string>
+
 </resources>

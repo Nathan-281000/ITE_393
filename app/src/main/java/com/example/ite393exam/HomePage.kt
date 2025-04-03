@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.CalendarView
+import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.OnBackPressedCallback
 import androidx.activity.enableEdgeToEdge
@@ -30,6 +32,7 @@ class HomePage : AppCompatActivity() {
         "2025-07-17" to "Welcome Assembly",
         "2025-07-18" to "General Assembly",
         "2025-07-19" to "Bridging The Gaps",
+
         "2025-07-15" to "First Week Hi v.2",
         "2025-07-25" to "Bridging The Gap 2.0",
         "2025-07-26" to "General Assembly GPA and Tactical",
@@ -113,6 +116,20 @@ class HomePage : AppCompatActivity() {
                 intent.putExtra("EVENT_DETAILS", eventDetails)
                 startActivity(intent)
             }
+        }
+        val ask = findViewById<ImageButton>(R.id.message)
+        ask.setOnClickListener {
+            val intent = Intent(this, AskMe::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            startActivity(intent)
+        }
+        val market = findViewById<ImageView>(R.id.market)
+        market.setOnClickListener {
+            val intent = Intent(this, Market::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            startActivity(intent)
         }
 
         calendarView.setOnDateChangeListener { _, year, month, dayOfMonth ->

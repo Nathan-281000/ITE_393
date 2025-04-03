@@ -85,6 +85,7 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:id="@+id/ask"
                 android:background="@drawable/bg_corners"
                 android:layout_width="400dp"
                 android:layout_height="300dp"
@@ -102,7 +103,8 @@
                 android:text="@string/part"
                 android:textColor="@color/black"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="TextContrastCheck" />
 
             <ImageView
                 android:layout_width="400dp"
@@ -312,15 +314,47 @@
     </TableRow>
 
     <ImageButton
-        android:id="@+id/message"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/chatbubble"
+        android:id="@+id/market"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/market"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.01"
+        app:layout_constraintHorizontal_bias="0.029"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="News and Updates"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/message"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/market"
+        app:layout_constraintVertical_bias="0.1"
+        tools:ignore="HardcodedText,TextSizeCheck" />
+
+    <ImageButton
+        android:id="@+id/message"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:background="@drawable/unread"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.029"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.85"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

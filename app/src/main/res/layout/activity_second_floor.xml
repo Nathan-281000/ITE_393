@@ -29,7 +29,6 @@
         android:id="@+id/backBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/rounded_button"
         android:text="@string/Back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,10 +42,11 @@
         android:layout_width="380dp"
         android:layout_height="700dp"
         android:src="@drawable/floor_two"
-        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/crBoys"
@@ -60,7 +60,7 @@
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
         app:layout_constraintVertical_bias="0.024"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/room203"
@@ -73,7 +73,8 @@
         app:layout_constraintHorizontal_bias="0.214"
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/room204"
@@ -86,7 +87,8 @@
         app:layout_constraintHorizontal_bias="0.802"
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/clinic"
@@ -99,7 +101,7 @@
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
         app:layout_constraintVertical_bias="0.023"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/room202"
@@ -112,7 +114,8 @@
         app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
-        app:layout_constraintVertical_bias="0.274" />
+        app:layout_constraintVertical_bias="0.274"
+        tools:ignore="VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/room201"
@@ -126,7 +129,7 @@
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
         app:layout_constraintVertical_bias="0.644"
-        tools:ignore="DuplicateSpeakableTextCheck" />
+        tools:ignore="DuplicateSpeakableTextCheck,VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/room205"
@@ -139,7 +142,7 @@
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
         app:layout_constraintVertical_bias="0.272"
-        tools:ignore="SpeakableTextPresentCheck" />
+        tools:ignore="SpeakableTextPresentCheck,VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/room206"
@@ -152,7 +155,8 @@
         app:layout_constraintHorizontal_bias="0.976"
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.643"
+        tools:ignore="VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/registrarFinance"
@@ -165,7 +169,8 @@
         app:layout_constraintHorizontal_bias="0.24"
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
-        app:layout_constraintVertical_bias="0.926" />
+        app:layout_constraintVertical_bias="0.926"
+        tools:ignore="VisualLintOverlap" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/adminOffice"
@@ -178,7 +183,8 @@
         app:layout_constraintHorizontal_bias="0.724"
         app:layout_constraintStart_toStartOf="@+id/mapTwo"
         app:layout_constraintTop_toTopOf="@+id/mapTwo"
-        app:layout_constraintVertical_bias="0.927" />
+        app:layout_constraintVertical_bias="0.927"
+        tools:ignore="VisualLintOverlap" />
 
     <ImageView
         android:id="@+id/imagePin"
@@ -189,7 +195,8 @@
         app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.497" />
+        app:layout_constraintVertical_bias="0.497"
+        tools:ignore="ContentDescription,ImageContrastCheck" />
 
     <TextView
         android:id="@+id/roomBoard"

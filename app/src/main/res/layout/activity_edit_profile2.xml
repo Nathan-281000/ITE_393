@@ -17,7 +17,8 @@
         app:layout_constraintHorizontal_bias="0.061"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="HardcodedText" />
 
     <android.widget.Button
         android:id="@+id/saveBtn"
@@ -29,7 +30,8 @@
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023" />
+        app:layout_constraintVertical_bias="0.023"
+        tools:ignore="HardcodedText" />
 
     <androidx.cardview.widget.CardView
         android:layout_marginTop="70dp"
@@ -61,13 +63,14 @@
                     android:text="Personal Details"
                     android:layout_margin="10dp"
                     tools:ignore="HardcodedText" />
+
                 <TextView
-                    android:layout_marginHorizontal="10dp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="15sp"
+                    android:layout_marginHorizontal="10dp"
                     android:hint="Student Id"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
                 <TextView
                     android:id="@+id/stuID"
                     android:paddingVertical="5dp"
@@ -76,15 +79,17 @@
                     android:textSize="15sp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="03-2122-031549"/>
+                    android:text="03-2122-031549"
+                    tools:ignore="HardcodedText" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:textSize="15sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
                     android:hint="Last Name"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
 
                 <EditText
                     android:id="@+id/stuLastName"
@@ -97,15 +102,16 @@
                     android:paddingVertical="10dp"
                     android:text="Sarmiento"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:textSize="15sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
                     android:hint="First Name"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
 
                 <EditText
                     android:id="@+id/stuFirstName"
@@ -118,15 +124,16 @@
                     android:paddingVertical="10dp"
                     android:text="Mark Paul"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:textSize="15sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
                     android:hint="Middle Name"
-                    tools:ignore="HardcodedText" />
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
 
                 <EditText
                     android:id="@+id/stuMiddleName"
@@ -140,14 +147,16 @@
                     android:paddingVertical="10dp"
                     android:text="Peralta"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:textSize="15sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="College"/>
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="College"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
                 <TextView
                     android:id="@+id/stuCollege"
                     android:paddingVertical="5dp"
@@ -155,14 +164,17 @@
                     android:layout_marginHorizontal="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="CITE"/>
+                    android:text="CITE"
+                    tools:ignore="HardcodedText" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp"
-                    android:textSize="15sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:hint="Course"/>
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Course"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
                 <TextView
                     android:id="@+id/stuCourse"
                     android:paddingVertical="5dp"
@@ -170,14 +182,17 @@
                     android:layout_marginHorizontal="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Bachelor of Science-Computer Science"/>
+                    android:text="Bachelor of Science-Computer Science"
+                    tools:ignore="HardcodedText" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:textSize="15sp"
-                    android:layout_marginHorizontal="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Semester"/>
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Semester"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
                 <TextView
                     android:id="@+id/stuSem"
                     android:paddingVertical="5dp"
@@ -188,13 +203,15 @@
                     android:textSize="15sp"
                     android:text="Y2S2"
                     tools:ignore="HardcodedText" />
+
                 <TextView
-                    android:layout_marginTop="10dp"
-                    android:textSize="15sp"
-                    android:layout_marginHorizontal="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Date of Birth"/>
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="Date of Birth"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
 
                 <EditText
                     android:id="@+id/stuBirthDate"
@@ -208,13 +225,15 @@
                     android:inputType="text"
                     android:text="03-07-2004"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
                 <TextView
-                    android:textSize="15sp"
-                    android:layout_marginHorizontal="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:hint="Gender"/>
+                    android:layout_marginHorizontal="10dp"
+                    android:hint="Gender"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
                 <RadioGroup
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -225,19 +244,23 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Male"
-                        android:checked="true"/>
+                        android:checked="true"
+                        tools:ignore="HardcodedText" />
                     <RadioButton
                         android:id="@+id/stuFemale"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Female"/>
+                        android:text="Female"
+                        tools:ignore="HardcodedText" />
                 </RadioGroup>
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
+                    android:hint="Mother's Name"
                     android:textSize="15sp"
-                    android:hint="Mother's Name"/>
+                    tools:ignore="HardcodedText,TextContrastCheck" />
 
                 <EditText
                     android:id="@+id/stuMother"
@@ -251,13 +274,15 @@
                     android:inputType="text"
                     android:text="Marites P. Sarmiento"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
+
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
+                    android:hint="Father's Name"
                     android:textSize="15sp"
-                    android:hint="Father's Name"/>
+                    tools:ignore="HardcodedText,TextContrastCheck" />
 
                 <EditText
                     android:id="@+id/stuFather"
@@ -272,21 +297,23 @@
                     android:paddingVertical="10dp"
                     android:text="Paul L. Sarmiento"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="22sp"
                     android:text="Contact Details"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="10dp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Student Mobile No"/>
+                    android:hint="Student Mobile No"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/stuNumber"
@@ -300,13 +327,14 @@
                     android:inputType="number"
                     android:text="09476938242"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Email"/>
+                    android:hint="Email"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/stuEmail"
@@ -320,13 +348,14 @@
                     android:inputType="text"
                     android:text="mape.sarmiento.up@phinmaed.com"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Father's Mobile No"/>
+                    android:hint="Father's Mobile No"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/stuFatherNumber"
@@ -340,13 +369,14 @@
                     android:inputType="number"
                     android:text="09283555810"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Mother's Mobile No"/>
+                    android:hint="Mother's Mobile No"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/stuMotherNumber"
@@ -360,21 +390,23 @@
                     android:inputType="text"
                     android:text="09283555810"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textStyle="bold"
                     android:textSize="22sp"
                     android:text="Emergency Person Contact Details"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="10dp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Person Name"/>
+                    android:hint="Person Name"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/stuGuardian"
@@ -387,13 +419,14 @@
                     android:paddingVertical="10dp"
                     android:text="Paul L. Sarmiento"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Relation"/>
+                    android:hint="Relation"
+                    tools:ignore="HardcodedText" />
 
                 <RadioGroup
                     android:layout_width="match_parent"
@@ -404,7 +437,8 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Father"
-                        android:checked="true"/>
+                        android:checked="true"
+                        tools:ignore="HardcodedText" />
                     <RadioButton
                         android:id="@+id/stuRelMother"
                         android:layout_width="wrap_content"
@@ -423,7 +457,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Address"/>
+                    android:hint="Address"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/stuGuardianAddress"
@@ -436,13 +471,14 @@
                     android:paddingVertical="10dp"
                     android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Mobile No"/>
+                    android:hint="Mobile No"
+                    tools:ignore="HardcodedText" />
 
                 <EditText
                     android:id="@+id/stuGuardianNumber"
@@ -456,20 +492,22 @@
                     android:inputType="text"
                     android:text="09283555810"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TextFields,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Current Address"
                     android:textStyle="bold"
                     android:textSize="22sp"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="10dp"
+                    tools:ignore="HardcodedText" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Address"/>
+                    android:hint="Address"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuCurrentAddress"
                     android:layout_width="match_parent"
@@ -482,13 +520,14 @@
                     android:inputType="text"
                     android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="City/Municipality"/>
+                    android:hint="City/Municipality"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuCurrentCity"
                     android:layout_width="match_parent"
@@ -501,13 +540,14 @@
                     android:inputType="text"
                     android:text="Manaoag"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Province"/>
+                    android:hint="Province"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuCurrentProvince"
                     android:layout_width="match_parent"
@@ -520,13 +560,14 @@
                     android:inputType="text"
                     android:text="Pangasinan"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Country"/>
+                    android:hint="Country"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuCurrentCountry"
                     android:layout_width="match_parent"
@@ -539,20 +580,22 @@
                     android:inputType="text"
                     android:text="PHILIPPINES"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Permanent Address"
                     android:textStyle="bold"
                     android:textSize="22sp"
-                    android:layout_margin="10dp"/>
+                    android:layout_margin="10dp"
+                    tools:ignore="HardcodedText" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Address"/>
+                    android:hint="Address"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuPermanentAddress"
                     android:layout_width="match_parent"
@@ -565,13 +608,14 @@
                     android:inputType="text"
                     android:text="Sitio Peralta, Oraan East Manaoag, Pangasinan"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="City/Municipality"/>
+                    android:hint="City/Municipality"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuPermanentCity"
                     android:layout_width="match_parent"
@@ -584,13 +628,14 @@
                     android:inputType="text"
                     android:text="Manaoag"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Province"/>
+                    android:hint="Province"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuPermanentProvince"
                     android:layout_width="match_parent"
@@ -609,7 +654,8 @@
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
                     android:textSize="15sp"
-                    android:hint="Country"/>
+                    android:hint="Country"
+                    tools:ignore="HardcodedText" />
                 <EditText
                     android:id="@+id/stuPermanentCountry"
                     android:layout_width="match_parent"
@@ -622,7 +668,7 @@
                     android:inputType="text"
                     android:text="PHILIPPINES"
                     android:textSize="15sp"
-                    tools:ignore="TouchTargetSizeCheck" />
+                    tools:ignore="Autofill,HardcodedText,LabelFor,TouchTargetSizeCheck,VisualLintTextFieldSize" />
 
             </LinearLayout>
         </ScrollView>

@@ -1,24 +1,60 @@
 package com.example.ite393exam
 
+import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
+import android.widget.TextView
+import androidx.activity.OnBackPressedCallback
+import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AppCompatActivity
 
-class AskMe : Fragment() {
-
+class AskMe : AppCompatActivity() {
+    private var userId : String? = null
+    private var university : String? = null
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        arguments?.let {
+        enableEdgeToEdge()
+        setContentView(R.layout.activity_ask_me)
+        userId = intent.getStringExtra("studentId").toString()
+        university = intent.getStringExtra("campus").toString()
+        val providedCourses = findViewById<TextView>(R.id.providedCourses)
+        val whyChoose = findViewById<TextView>(R.id.whyChoose)
+        val textView3 = findViewById<TextView>(R.id.textView3)
+        val howToEnroll = findViewById<TextView>(R.id.howtoEnroll)
+        val scholarship = findViewById<TextView>(R.id.scholarship)
+        val back = findViewById<TextView>(R.id.back)
+        val qualityOfEducation = findViewById<TextView>(R.id.qualityOfEducation)
+        providedCourses.setOnClickListener {
+            textView3.setText(R.string.courses)
         }
-    }
-
-    override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_ask_me, container, false)
+        whyChoose.setOnClickListener {
+            textView3.setText(R.string.enroll)
+        }
+        howToEnroll.setOnClickListener {
+            textView3.setText(R.string.enrollment)
+        }
+        scholarship.setOnClickListener {
+            textView3.setText(R.string.scholarship)
+        }
+        qualityOfEducation.setOnClickListener {
+            textView3.setText(R.string.qualityOfEducation)
+        }
+        back.setOnClickListener {
+            val intent = Intent(this, HomePage::class.java)
+            intent.putExtra("studentId", userId)
+            intent.putExtra("campus", university)
+            startActivity(intent)
+            finish()
+        }
+        onBackPressedDispatcher.addCallback(this, object : OnBackPressedCallback(true) {
+            override fun handleOnBackPressed() {
+                val intent = Intent(this@AskMe, HomePage::class.java)
+                intent.putExtra("studentId", userId)
+                intent.putExtra("campus", university)
+                startActivity(intent)
+                finish()
+            }
+        })
     }
 }
